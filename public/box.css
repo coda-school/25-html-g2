@@ -6,6 +6,8 @@ body {
     background-attachment: fixed;
     margin: 0;
     min-height: 100vh;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
 }
 
 h1 {
@@ -27,11 +29,120 @@ h1 {
 .description {
     text-align: center;
     font-size: 1.2rem;
-    font-family: Arial, sans-serif;
-    color: #FFFFFF;
     max-width: 800px;
     margin: 2rem auto;
     padding: 0 2rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
     line-height: 1.6;
 }
+
+.box-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 3rem;
+    flex-wrap: wrap;
+}
+
+.box-slot {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(255, 0, 255, 0.3),
+                inset 0 0 10px rgba(0, 255, 255, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+.box-slot:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(255, 0, 255, 0.5),
+                inset 0 0 15px rgba(0, 255, 255, 0.3);
+}
+
+.box-slot img {
+    width: 125%;
+    height: auto;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.price {
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #E6B8FF;
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.6);
+    letter-spacing: 1px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.box-slot:hover .price {
+    opacity: 1;
+}
+
+/* --- Bouton "?" --- */
+.question-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 28px;
+    height: 29px;
+    background: rgba(0, 0, 0, 0.55);
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    line-height: 28px;
+    cursor: pointer;
+    transition: 0.25s;
+    user-select: none;
+    z-index: 20;
+}
+
+.info-toggle {
+    display: none;
+}
+
+.info-bubble {
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background: rgba(20, 0, 40, 0.9);
+    color: #fff;
+    padding: 20px 14px;
+    border-radius: 12px;
+    font-size: 0.9rem;
+    line-height:2;
+    width: 180px;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    pointer-events: none;
+    box-shadow: 0 0 15px rgba(138, 43, 226, 0.6);
+    z-index: 15;
+}
+
+.info-toggle:checked + .question-btn + .info-bubble {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: all;
+}
+
+.bubble1 { background-color:#08C944 }
+.bubble2 { background-color:#630394 }
+.bubble3 { background-color:#A80000 }
