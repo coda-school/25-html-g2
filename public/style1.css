@@ -1,0 +1,9 @@
+.jeu-section h1 {
+    text-align: center; /* centre le titre principal */
+}
+
+.image-et-texte {
+    display: flex;          /* place l'image et le texte sur la même ligne */
+    align-items: top;    /* centre verticalement le texte par rapport à l'image */
+    gap: 20px;              /* espace entre l'image et le texte */
+}
