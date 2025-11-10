@@ -9,10 +9,43 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    background-image: "#";
+    min-height: 50vh;
+    background-image: url("../image/WinStreak background.png");
 }
 
 .wrapper {
+    width: 420px;
+    background: purple;
+    color: yellow;
+}
 
+.wrapper h1 {
+    font-size: 20px;
+    text-align: center;
+}
+
+.wrapper .inputBox {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    background: blue;
+    margin: 40px 0;
+}
+
+.inputBox input {
+    width: 100%;
+    height: 100%;
+    background: green;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+}
+
+.inputBox input::placeholder {
+    color: mediumspringgreen;
+}
+
+.wrapper .remember-forgot {
+    display: flex;
+    justify-content: space-between;
 }
