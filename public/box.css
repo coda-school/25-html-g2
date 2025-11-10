@@ -1,14 +1,5 @@
-.box-page {
-    background-image: url('Image/WinStreak background.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    margin: 0;
-    min-height: 100vh;
-}
 body {
-    background-image: url('Image/WinStreak background.png');
+    background-image: url('Image/ok.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -22,13 +13,25 @@ h1 {
     font-size: 4rem;
     font-family: 'Arial Black', 'Impact', sans-serif;
     font-weight: bold;
-    color: #00FFFF;
+    color: #E6B8FF;
     text-shadow:
-        0 0 10px rgba(0, 255, 255, 0.8),
-        0 0 20px rgba(0, 255, 255, 0.6),
-        0 0 30px rgba(0, 255, 255, 0.4),
-        0 0 40px rgba(138, 43, 226, 0.5);
+        0 0 10px rgba(186, 85, 211, 0.8),
+        0 0 20px rgba(138, 43, 226, 0.6),
+        0 0 30px rgba(255, 215, 0, 0.3),
+        2px 2px 4px rgba(0, 0, 0, 0.8);
     letter-spacing: 0.3rem;
     margin-top: 3rem;
     text-transform: uppercase;
+}
+
+.description {
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: Arial, sans-serif;
+    color: #FFFFFF;
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    line-height: 1.6;
 }
