@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="box.css">
 </head>
 <body>
+
 <h1>BOX GAME</h1>
 <h2 class="description">
     Ouvrez des box mystérieuses et tentez de remporter des objets rares et précieux !<br>
@@ -13,30 +14,56 @@
 </h2>
 
 <div class="box-container">
+
     <div class="box-slot">
-        <input type="checkbox" id="info1" class="info-toggle">
-        <label for="info1" class="question-btn">?</label>
-        <div class="info-bubble bubble1">Box 1 -</div>
+        <input type="checkbox" id="box1-info" class="toggle">
+        <label for="box1-info" class="question-btn">?</label>
+        <div class="info-bubble">
+            <strong>Drop Chances</strong>
+        </div>
         <img src="Image/box1.png" alt="Box 1" class="box1">
         <p class="price">2 €</p>
     </div>
 
     <div class="box-slot">
-        <input type="checkbox" id="info2" class="info-toggle">
-        <label for="info2" class="question-btn">?</label>
-        <div class="info-bubble bubble2">Box 2 -</div>
+        <input type="checkbox" id="box2-info" class="toggle">
+        <label for="box2-info" class="question-btn">?</label>
+        <div class="info-bubble">
+            <strong>Drop Chances</strong>
+        </div>
         <img src="Image/box2.png" alt="Box 2" class="box2">
         <p class="price">5 €</p>
     </div>
 
     <div class="box-slot">
-        <input type="checkbox" id="info3" class="info-toggle">
-        <label for="info3" class="question-btn">?</label>
-        <div class="info-bubble bubble3">Box 3 -</div>
+        <input type="checkbox" id="box3-info" class="toggle">
+        <label for="box3-info" class="question-btn">?</label>
+        <div class="info-bubble">
+            <strong>Drop Chances</strong>
+        </div>
         <img src="Image/box3.png" alt="Box 3" class="box3">
         <p class="price">8 €</p>
     </div>
+
 </div>
+
+<section class="inventory">
+    <h2>Inventaire</h2>
+    <div class="inventory-grid">
+        <div class="empty-slot">Vide</div>
+        <div class="empty-slot">Vide</div>
+        <div class="empty-slot">Vide</div>
+        <div class="empty-slot">Vide</div>
+        <div class="empty-slot">Vide</div>
+        <div class="empty-slot">Vide</div>
+    </div>
+</section>
+
+<div class="decor-piece"></div>
+<div class="decor-piece"></div>
+<div class="decor-piece"></div>
+<div class="decor-piece"></div>
+<div class="decor-piece"></div>
 
 </body>
 </html>
