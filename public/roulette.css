@@ -26,8 +26,6 @@
   --seg-angle: calc(360deg / var(--segments));
 }
 
-/* ---- Page globale ---- */
-*{box-sizing:border-box}
 body {
   background: url('Image/background-roulette.png') center/cover no-repeat fixed;
   margin: 0;
@@ -48,7 +46,7 @@ body {
   border-bottom:26px solid #f6d61e;
 }
 
-/* ---- Anneau lumineux ---- */
+/* ---- Anneau clignottant qui fait comme si y'avait une animation ---- */
 .led-ring{
   width: calc(var(--size) + 40px);
   height: calc(var(--size) + 40px);
@@ -59,10 +57,9 @@ body {
   position:relative;
   box-shadow: 0 0 12px 4px rgba(255,215,0,0.08),
               0 0 28px 8px rgba(255,69,0,0.04) inset;
-  animation: ringPulse 1.4s infinite;
+  animation: ringPulse 2s infinite;
 }
 .led-ring::before{
-  content:"";
   position:absolute;
   inset:-12px;
   border-radius:50%;
@@ -99,40 +96,40 @@ body {
   padding:10px;
   background:conic-gradient(
     from -90deg,
-    green 0deg 9.73deg,
-    red 9.73deg 19.46deg,
-    black 19.46deg 29.19deg,
-    red 29.19deg 38.92deg,
-    black 38.92deg 48.65deg,
-    red 48.65deg 58.38deg,
-    black 58.38deg 68.11deg,
-    red 68.11deg 77.84deg,
-    black 77.84deg 87.57deg,
-    red 87.57deg 97.3deg,
-    black 97.3deg 107.03deg,
-    red 107.03deg 116.76deg,
-    black 116.76deg 126.49deg,
-    red 126.49deg 136.22deg,
-    black 136.22deg 145.95deg,
-    red 145.95deg 155.68deg,
-    black 155.68deg 165.41deg,
-    red 165.41deg 175.14deg,
-    black 175.14deg 184.87deg,
-    red 184.87deg 194.6deg,
-    black 194.6deg 204.33deg,
-    red 204.33deg 214.06deg,
-    black 214.06deg 223.79deg,
-    red 223.79deg 233.52deg,
-    black 233.52deg 243.25deg,
-    red 243.25deg 252.98deg,
-    black 252.98deg 262.71deg,
-    red 262.71deg 272.44deg,
-    black 272.44deg 282.17deg,
-    red 282.17deg 291.9deg,
-    black 291.9deg 301.63deg,
-    red 301.63deg 311.36deg,
-    black 311.36deg 321.09deg,
-    red 321.09deg 330.82deg,
+    green 0deg 9deg,
+    red 9deg 19deg,
+    black 19deg 29deg,
+    red 29deg 38deg,
+    black 38deg 48deg,
+    red 48deg 58deg,
+    black 58deg 68deg,
+    red 68deg 77deg,
+    black 77deg 87deg,
+    red 87deg 97deg,
+    black 97deg 107deg,
+    red 107deg 116deg,
+    black 116deg 126deg,
+    red 126deg 136deg,
+    black 136deg 145deg,
+    red 145deg 155deg,
+    black 155deg 165deg,
+    red 165deg 175deg,
+    black 175deg 184deg,
+    red 184deg 194deg,
+    black 194deg 204deg,
+    red 204deg 214deg,
+    black 214deg 223deg,
+    red 223deg 233deg,
+    black 233deg 243deg,
+    red 243deg 252deg,
+    black 252deg 262deg,
+    red 262deg 272deg,
+    black 272deg 282deg,
+    red 282deg 291deg,
+    black 291deg 301deg,
+    red 301deg 311deg,
+    black 311deg 321deg,
+    red 321deg 330.82deg,
     black 330.82deg 340.55deg,
     red 340.55deg 350.28deg,
     black 350.28deg 360deg
@@ -145,7 +142,7 @@ body {
   position:absolute;
   left:50%; top:50%;
   transform:translate(-50%,-50%);
-  width:46%; height:46%;
+  width:50%; height:50%;
   border-radius:50%;
   background:radial-gradient(circle at 30% 30%, rgba(255,255,255,0.06), rgba(0,0,0,0.55));
   display:flex;
@@ -159,7 +156,7 @@ body {
   font-size:20px;
   font-weight:700;
   letter-spacing:1px;
-  color:#ffd700;
+  color:#fff700;
 }
 .winstreak-sub{
   font-size:12px;
@@ -187,16 +184,10 @@ body {
 }
 /* le premier (0 vert) */
 .numbers span:nth-child(1){
-  transform:rotate(4.86deg) translate(0,-140px) rotate(-4.86deg);
-  color:#052400;
+  transform:rotate(4deg) translate(0,-140px) rotate(-4deg);
+  color:#f9fff8;
 }
 
-/* Exemple de pattern pour quelques numéros (tu peux laisser tel quel) */
-.numbers span:nth-child(2){transform:rotate(14.59deg) translate(0,-140px) rotate(-14.59deg);}
-.numbers span:nth-child(3){transform:rotate(24.32deg) translate(0,-140px) rotate(-24.32deg);}
-.numbers span:nth-child(4){transform:rotate(34.05deg) translate(0,-140px) rotate(-34.05deg);}
-.numbers span:nth-child(5){transform:rotate(43.78deg) translate(0,-140px) rotate(-43.78deg);}
-/* ... (les autres suivent le même principe) */
 
 /* ---- Contrôles ---- */
 .controls{
