@@ -1,50 +1,31 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="Samuel/style.css">
-    <title>WinStreak</title>
-    <link rel="stylesheet" href="Samuel/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WinStreak – Slot Machine</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="slot-machine.css">
 </head>
 
-
 <body>
-    <div style="text-align:center">
-    <h1>Slot-Machine</h1>
+  <div style="text-align:center">
+    <h1 id="colortext">SLOT-MACHINE</h1>
 
-    <!-- <dt></dt><dt></dt><dt></dt> -->
-    
-    <form>
-        <div>
-        <strong> mise:</strong>
-        <input type="text" id="uname" required />
-        <span class="validity"></span>
-        </div>
-
-    </form>
-    
-
-
-
-    <input style="text-align:center" class="style1" type="button" value="Jouer"/>
-    <!-- 9;8;7;6;5;4;3;2;1<br>
-    9;8;7;6;5;4;3;2;1<br>
-    9;8;7;6;5;4;3;2;1<br> -->
-
-    <!-- <ol>Explication:
-        <li>Mettre une mise</li>
-        <li>Jouer</li>
-    </ol>
-        
     <ul>
-        <li>Trois même chiffres alignées pour WIN</li>
-        <li>Sinon LOOSE</li>
-    
+      <li class="block">7</li>
+      <li class="block">7</li>
+      <li class="block">7</li>
     </ul>
-    -->
-    
-    </div>
-    
 
+    <form>
+      <div id="misestyle">
+        <strong>Mise :</strong>
+        <input type="text" id="uname"required>
+      </div>
+    </form>
+
+    <input type="button" class="styleslot" value="Jouer">
+  </div>
 </body>
 </html>
