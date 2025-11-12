@@ -1,31 +1,58 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WinStreak – Slot Machine</title>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="slot-machine.css">
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WinStreak – Slot Machine</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="./Image/favicone2.png">
+    <link rel="stylesheet" href="slot-machine.css">
+  </head>
 
-<body>
-  <div style="text-align:center">
-    <h1 id="colortext">SLOT-MACHINE</h1>
+  <body style="text-align:center">
+    
+    <h1>SLOT-MACHINE</h1>
 
     <ul>
-      <li class="block">7</li>
-      <li class="block">7</li>
-      <li class="block">7</li>
+      <p class="block">7</p>
+      <p class="block">7</p>
+      <p class="block">7</p>
     </ul>
 
-    <form>
-      <div id="misestyle" id="">
-        <strong><span style="margin: auto;">Mise: </span></strong>
-        <input type="text" id="uname"required>
-      </div>
+    <form id="misestyle" id="">
+      <strong><span style="margin: auto;">Mise: </span></strong>
+      <input type="text" id="uname"required>
     </form>
 
+    <section class="spacespace"></section>
     <input type="button" class="styleslot" id="colortextjouer" value="Jouer">
-  </div>
-</body>
+    <section class="spacejouer"></section>
+  
+  </body>
+
+
+  <footer class="site-footer footer-content">
+
+    <article class="footer-section legal">
+      <h3><a id="colortextyellow">Mentions légales</a></h3>
+      <p><a id="colortextwhite">Ce site est destiné à un public majeur. Le jeu comporte des risques. Jouez de manière responsable.</a></p>
+      <p><a id="colortextwhite">2025 WinStreak<br>© Tous droits réservés.</a></p>
+    </article>
+
+    <nav class="footer-section other-games">
+      <h3><a id="colortextyellow">Jouer à d'autres jeux :</a></h3>
+      <ul>
+        <li>
+          <img class="image" src="/public/Image/box1.png" width="150"/>
+          <h2><a href="Box.html" id="colortext">Box</a></h2>
+        </li>
+        <li>
+          <img class="image" src="/public/Image/roulettefondtransparent.png" width="100"/>
+          <h2><a href="Roulette.html" id="colortext">Roulette</a></h2>
+        </li>
+      </ul>
+    </nav>
+
+  </footer>
+
 </html>
