@@ -203,12 +203,12 @@ textarea {
 
 /* ---- Contrôles ---- */
 .mon-bouton {
-  display: block;       /* nécessaire pour margin auto */
-  margin: 100px auto;   /* centre horizontalement et ajoute un peu d’espace vertical */
+  display: block;
+  margin: 100px auto;
   font-size: 20px;
   padding: 15px 30px;
-  background: #ffd700;
-  color: black;
+  background:darkred;
+  color: rgb(248, 242, 242);
   border-radius: 10px;
   border: none;
   cursor: pointer;
