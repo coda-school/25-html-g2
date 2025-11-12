@@ -23,8 +23,14 @@ h1{
   color: rgb(255, 170, 0);
   font-family: 'Orbitron', sans-serif;
   text-shadow: 0 0 10px rgb(0, 0, 0);
-  -webkit-text-stroke: 0px rgb(255, 170, 0);
-  
+  white-space: nowrap;
+
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 8vw;
+  }
 }
 
 
@@ -53,33 +59,30 @@ h1{
 /*slot*/
 .block
 {
-  border: 4px solid rgb(255, 170, 0);
-  padding: 1em;
-  width: 20vw;
-  height: 20vh;
-  margin: 1em;
-  box-sizing: border-box;
+  flex: 1;
+  aspect-ratio: 1 / 1;
+  border: 3px solid rgb(255, 170, 0);
+  border-radius: 10px;
+  background-color: #ffdf00;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 3vw; 
-  background-color: #ffdf00;
-  border-radius: 10px;
+  font-size: clamp(2rem, 6vw, 3rem);
+  box-sizing: border-box;
+  max-width: 100px;
 
 }
 
 ul {
   display: flex;
-  list-style: none;
   justify-content: center;
-  gap: 1em;
+  align-items: center;
+  gap: 2vw;
+  list-style: none;
   padding: 0;
-  margin: 0;
-
-}
-
-.block {
-  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 600px;
 
 }
 
@@ -105,6 +108,7 @@ div{
 
 
 
+
 /*bouton jouer*/
 .styleslot {
   border: 0;
@@ -122,6 +126,7 @@ div{
 .styleslot:hover {
   background-color: #ffdf00;
 }
+
 
 #colortextjouer{
   color: rgb(0, 0, 0);
@@ -199,10 +204,10 @@ div{
   transition: color 0.25s ease, text-shadow 0.25s ease;
 }
 
-.footer-section ul li a:hover {
-  color: #fff200;
-  text-shadow: 0 0 8px rgba(255, 255, 120, 0.8);
-  text-decoration: underline;
+.footer-section ul li a:hover img {
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 10px rgba(255, 227, 16, 0.477));
 }
+
 
 
