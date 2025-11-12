@@ -1,0 +1,223 @@
+.jeu-section h1 {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.image-et-texte {
+    display: flex;          /* met l'image et le texte sur la même ligne */
+    align-items: flex-start; /* aligne le texte en haut de l'image */
+    gap: 20px;              /* espace entre l'image et le texte */
+}
+
+.texte h2 {
+    margin-bottom: 10px;    /* petit espace sous le titre */
+}
+
+.texte p {
+    margin: 0;              /* pas d'espace inutile */
+}
+
+
+:root{
+  --size: 360px;
+  --radius: calc(var(--size) / 2);
+  --label-distance: 140px;
+  --segments: 37;
+  --seg-angle: calc(360deg / var(--segments));
+}
+
+body {
+  background: url('Image/background-roulette.png') center/cover no-repeat fixed;
+  margin: 0;
+  color: #fff1ff;
+  letter-spacing: 0.5px;
+}
+
+.circle-roulette{
+  text-align:center;
+}
+
+/* ---- Flèche du haut ---- */
+.pointer{
+  width:0;height:0;
+  margin:0 auto 12px;
+  border-left:16px solid transparent;
+  border-right:16px solid transparent;
+  border-bottom:26px solid #f6d61e;
+}
+
+/* ---- Anneau clignottant qui fait comme si y'avait une animation ---- */
+.led-ring{
+  width: calc(var(--size) + 40px);
+  height: calc(var(--size) + 40px);
+  border-radius:50%;
+  display:inline-grid;
+  place-items:center;
+  margin:0 auto;
+  position:relative;
+  box-shadow: 0 0 12px 4px rgba(255,215,0,0.08),
+              0 0 28px 8px rgba(255,69,0,0.04) inset;
+  animation: ringPulse 2s infinite;
+}
+.led-ring::before{
+  position:absolute;
+  inset:-12px;
+  border-radius:50%;
+  background: conic-gradient(from 90deg, rgba(255,255,255,0.08), transparent 40%);
+  mix-blend-mode: screen;
+  filter: blur(6px);
+  opacity:0.9;
+}
+@keyframes ringPulse{
+  0%{ box-shadow:0 0 6px 2px rgba(255,215,0,0.05); transform:scale(1);}
+  50%{ box-shadow:0 0 20px 6px rgba(255,215,0,0.2); transform:scale(1.02);}
+  100%{ box-shadow:0 0 6px 2px rgba(255,215,0,0.05); transform:scale(1);}
+}
+
+/* ---- Roue principale ---- */
+.roulette{
+  width:var(--size);
+  height:var(--size);
+  border-radius:50%;
+  position:relative;
+  overflow:visible;
+  display:block;
+  transform-origin:center;
+  transition:transform 4s cubic-bezier(.2,.8,.2,1);
+  box-shadow:0 6px 30px rgba(0,0,0,0.7);
+}
+
+/* Couleurs des cases */
+.roulette::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  border-radius:50%;
+  padding:10px;
+  background:conic-gradient(
+    from -90deg,
+    green 0deg 9deg,
+    red 9deg 19deg,
+    black 19deg 29deg,
+    red 29deg 38deg,
+    black 38deg 48deg,
+    red 48deg 58deg,
+    black 58deg 68deg,
+    red 68deg 77deg,
+    black 77deg 87deg,
+    red 87deg 97deg,
+    black 97deg 107deg,
+    red 107deg 116deg,
+    black 116deg 126deg,
+    red 126deg 136deg,
+    black 136deg 145deg,
+    red 145deg 155deg,
+    black 155deg 165deg,
+    red 165deg 175deg,
+    black 175deg 184deg,
+    red 184deg 194deg,
+    black 194deg 204deg,
+    red 204deg 214deg,
+    black 214deg 223deg,
+    red 223deg 233deg,
+    black 233deg 243deg,
+    red 243deg 252deg,
+    black 252deg 262deg,
+    red 262deg 272deg,
+    black 272deg 282deg,
+    red 282deg 291deg,
+    black 291deg 301deg,
+    red 301deg 311deg,
+    black 311deg 321deg,
+    red 321deg 330deg,
+    black 330deg 340deg,
+    red 340deg 350deg,
+    black 350deg 360deg
+  );
+  box-shadow:inset 0 0 0 6px #111;
+}
+
+/* ---- Centre : WINSTREAK ---- */
+.center{
+  position:absolute;
+  left:50%; top:50%;
+  transform:translate(-50%,-50%);
+  width:50%; height:50%;
+  border-radius:50%;
+  background:radial-gradient(circle at 30% 30%, rgba(255,255,255,0.06), rgba(0,0,0,0.55));
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  border:4px solid rgba(0,0,0,0.6);
+  box-shadow:0 6px 18px rgba(0,0,0,0.6), inset 0 2px 6px rgba(255,255,255,0.02);
+}
+.winstreak{
+  font-size:20px;
+  font-weight:700;
+  letter-spacing:1px;
+  color:#fff700;
+}
+.winstreak-sub{
+  font-size:12px;
+  color:#fff;
+  opacity:0.9;
+  margin-top:6px;
+}
+
+/* ---- Numéros autour ---- */
+.numbers{
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+}
+.numbers span{
+  position:absolute;
+  left:50%; top:50%;
+  transform-origin:0 0;
+  font-size:12px;
+  font-weight:600;
+  width:34px;
+  text-align:center;
+  color:#fff;
+  text-shadow:0 1px 0 rgba(0,0,0,0.8);
+}
+/* le premier (0 vert) */
+.numbers span:nth-child(1){
+  transform:rotate(4deg) translate(0,-140px) rotate(-4deg);
+  color:#f9fff8;
+}
+
+
+/* ---- Contrôles ---- */
+.mon-bouton {
+  display: block;       /* nécessaire pour margin auto */
+  margin: 100px auto;   /* centre horizontalement et ajoute un peu d’espace vertical */
+  font-size: 20px;
+  padding: 15px 30px;
+  background: #ffd700;
+  color: black;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.1s, background-color 0.2s;
+}
+
+
+/* Effet au survol */
+.mon-bouton:hover {
+  background-color: #c008e4;
+}
+
+/* Effet quand on clique */
+.mon-bouton:active {
+  transform: scale(0.95); /* bouton “pressé” */
+}
+
+.footer-reseaux {
+  display: flex;
+  justify-content: center; /* centre horizontalement */
+  align-items: center;     /* centre verticalement si le conteneur a une hauteur */
+  gap: 20px;               /* espace entre les éléments */
+}
+
