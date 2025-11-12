@@ -188,6 +188,18 @@ body {
   color:#f9fff8;
 }
 
+.mise-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: fit-content;
+  margin: 50px auto;
+}
+
+textarea {
+  max-width: 300px;
+  max-height: 10px;
+}
 
 /* ---- Contrôles ---- */
 .mon-bouton {
