@@ -286,14 +286,14 @@ textarea {
 }
 
 .footer-section ul li a {
-  color: #ffb0e0;
+  color: #fd7f7f;
   text-decoration: none;
   font-weight: bold;
   transition: color 0.25s ease, text-shadow 0.25s ease;
 }
 
 .footer-section ul li a:hover {
-  color: #ff63c2;
+  color: #ff6363;
   text-shadow: 0 0 8px rgba(243, 10, 10, 0.7);
   text-decoration: underline;
 }
