@@ -113,7 +113,7 @@ h1 {
 
 .question-btn:hover {
   background: radial-gradient(circle at center, #ff66cc 20%, #d90093 90%);
-  transform: scale(1.1) rotate(5deg);
+  transform: scale(1.1) rotate(10deg);
 }
 
 .toggle { display: none; }
@@ -307,7 +307,6 @@ h1 {
 }
 
 .back-to-top:hover {
-  transform: scale(1.1) rotate(-10deg);
-  box-shadow: 0 0 25px rgba(255, 80, 200, 0.8);
+  transform: scale(1.1)
 }
 
