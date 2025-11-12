@@ -1,0 +1,56 @@
+/*mise*/
+div{
+    margin-bottom: 10px;
+    position: relative;
+}
+
+input+span{
+    padding-right: 30px;
+}
+
+
+
+
+/*bouton jouer*/
+.style1 {
+  border: 0;
+  line-height: 2.5;
+  padding: 0 20px;
+  font-size: 1rem;
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000000;
+  border-radius: 25px;
+  background-color: rgb(170, 0, 0);
+  background-image: linear-gradient(
+    to top left,
+    rgb(0 0 0 / 20%),
+    rgb(0 0 0 / 20%) 30%,
+    rgb(0 0 0 / 0%)
+  );
+  box-shadow:
+    inset 2px 2px 3px rgb(255 255 255 / 60%),
+    inset -2px -2px 3px rgb(0 0 0 / 60%);
+}
+.style1:hover {
+  background-color: rgb(0, 159, 50);
+}
+
+.jeu-section h1 {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.image-et-texte {
+    display: flex;          /* met l'image et le texte sur la même ligne */
+    align-items: flex-start; /* aligne le texte en haut de l'image */
+    gap: 20px;              /* espace entre l'image et le texte */
+}
+
+.texte h2 {
+    margin-bottom: 10px;    /* petit espace sous le titre */
+}
+
+.texte p {
+    margin: 0;              /* pas d'espace inutile */
+}
