@@ -33,7 +33,7 @@ body {
   letter-spacing: 0.5px;
 }
 
-.wrapper{
+.circle-roulette{
   text-align:center;
 }
 
@@ -129,10 +129,10 @@ body {
     black 291deg 301deg,
     red 301deg 311deg,
     black 311deg 321deg,
-    red 321deg 330.82deg,
-    black 330.82deg 340.55deg,
-    red 340.55deg 350.28deg,
-    black 350.28deg 360deg
+    red 321deg 330deg,
+    black 330deg 340deg,
+    red 340deg 350deg,
+    black 350deg 360deg
   );
   box-shadow:inset 0 0 0 6px #111;
 }
@@ -190,28 +190,34 @@ body {
 
 
 /* ---- Contrôles ---- */
-.controls{
-  margin-top:18px;
-  display:flex;
-  gap:10px;
-  justify-content:center;
-  flex-wrap:wrap;
+.mon-bouton {
+  display: block;       /* nécessaire pour margin auto */
+  margin: 100px auto;   /* centre horizontalement et ajoute un peu d’espace vertical */
+  font-size: 20px;
+  padding: 15px 30px;
+  background: #ffd700;
+  color: black;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.1s, background-color 0.2s;
 }
-input[type="radio"]{display:none;}
-.controls label{
-  background:#ffd700;
-  color:#111;
-  padding:10px 14px;
-  border-radius:10px;
-  font-weight:700;
-  cursor:pointer;
-  box-shadow:0 4px 10px rgba(0,0,0,0.45);
-  transition:transform .12s ease;
-}
-.controls label:hover{transform:translateY(-3px);}
 
-/* ---- Animations de spin ---- */
-#r1:checked ~ .led-ring .roulette{transform:rotate(2880deg);transition:transform 4s cubic-bezier(.15,.8,.2,1);}
-#r2:checked ~ .led-ring .roulette{transform:rotate(2948deg);transition:transform 4.6s cubic-bezier(.15,.8,.2,1);}
-#r3:checked ~ .led-ring .roulette{transform:rotate(3055deg);transition:transform 5.1s cubic-bezier(.15,.8,.2,1);}
-#r4:checked ~ .led-ring .roulette{transform:rotate(3191deg);transition:transform 5.6s cubic-bezier(.15,.8,.2,1);}
+
+/* Effet au survol */
+.mon-bouton:hover {
+  background-color: #c008e4;
+}
+
+/* Effet quand on clique */
+.mon-bouton:active {
+  transform: scale(0.95); /* bouton “pressé” */
+}
+
+.footer-reseaux {
+  display: flex;
+  justify-content: center; /* centre horizontalement */
+  align-items: center;     /* centre verticalement si le conteneur a une hauteur */
+  gap: 20px;               /* espace entre les éléments */
+}
+
