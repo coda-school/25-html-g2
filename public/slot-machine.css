@@ -1,7 +1,74 @@
+
+
+
+
+/*background*/
+body{
+  background-image: url("/public/Image/background\ slot-machine.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  
+}
+
+
+#colortext{
+  color: rgb(255, 170, 0);
+  font-family: 'Orbitron', sans-serif;
+}
+
+#misestyle{
+  color: rgb(255, 170, 0);
+  font-family: 'Orbitron', sans-serif;
+  border: 0;
+  line-height: 2.0;
+  padding: 0 20px;
+  font-size: 1rem;
+  text-align: left;
+}
+
+
+/*slot*/
+.block,
+li {
+  border: 4px solid rgb(255, 251, 32);
+  padding: 1em;
+  width: 20vw;
+  height: 20vh;
+  margin: 1em;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3vw; 
+  background-color: rgb(255, 166, 0);
+  border-radius: 10px;
+
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  gap: 1em;
+  padding: 0;
+  margin: 0;
+
+}
+
+.block {
+  display: block;
+
+}
+
+
+
+
 /*mise*/
 div{
     margin-bottom: 10px;
-    position: relative;
+    position: center;
 }
 
 input+span{
@@ -12,26 +79,19 @@ input+span{
 
 
 /*bouton jouer*/
-.style1 {
+.styleslot {
   border: 0;
-  line-height: 2.5;
+  line-height: 2.0;
   padding: 0 20px;
   font-size: 1rem;
   text-align: center;
-  color: #fff;
-  text-shadow: 1px 1px 1px #000000;
+  color: #000000;
   border-radius: 25px;
-  background-color: rgb(170, 0, 0);
-  background-image: linear-gradient(
-    to top left,
-    rgb(0 0 0 / 20%),
-    rgb(0 0 0 / 20%) 30%,
-    rgb(0 0 0 / 0%)
-  );
+  background-color: rgb(253, 152, 0);
   box-shadow:
     inset 2px 2px 3px rgb(255 255 255 / 60%),
     inset -2px -2px 3px rgb(0 0 0 / 60%);
 }
-.style1:hover {
-  background-color: rgb(0, 159, 50);
+.styleslot:hover {
+  background-color: rgb(255, 238, 0);
 }
