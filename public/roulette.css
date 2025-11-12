@@ -17,7 +17,210 @@
     margin: 0;              /* pas d'espace inutile */
 }
 
-.jeu-roulette {
-        text-align: center;
-    margin-bottom: 5px;
+
+:root{
+  --size: 360px;
+  --radius: calc(var(--size) / 2);
+  --label-distance: 140px;
+  --segments: 37;
+  --seg-angle: calc(360deg / var(--segments));
 }
+
+/* ---- Page globale ---- */
+*{box-sizing:border-box}
+body {
+  background: url('Image/background-roulette.png') center/cover no-repeat fixed;
+  margin: 0;
+  color: #fff1ff;
+  letter-spacing: 0.5px;
+}
+
+.wrapper{
+  text-align:center;
+}
+
+/* ---- Flèche du haut ---- */
+.pointer{
+  width:0;height:0;
+  margin:0 auto 12px;
+  border-left:16px solid transparent;
+  border-right:16px solid transparent;
+  border-bottom:26px solid #f6d61e;
+}
+
+/* ---- Anneau lumineux ---- */
+.led-ring{
+  width: calc(var(--size) + 40px);
+  height: calc(var(--size) + 40px);
+  border-radius:50%;
+  display:inline-grid;
+  place-items:center;
+  margin:0 auto;
+  position:relative;
+  box-shadow: 0 0 12px 4px rgba(255,215,0,0.08),
+              0 0 28px 8px rgba(255,69,0,0.04) inset;
+  animation: ringPulse 1.4s infinite;
+}
+.led-ring::before{
+  content:"";
+  position:absolute;
+  inset:-12px;
+  border-radius:50%;
+  background: conic-gradient(from 90deg, rgba(255,255,255,0.08), transparent 40%);
+  mix-blend-mode: screen;
+  filter: blur(6px);
+  opacity:0.9;
+}
+@keyframes ringPulse{
+  0%{ box-shadow:0 0 6px 2px rgba(255,215,0,0.05); transform:scale(1);}
+  50%{ box-shadow:0 0 20px 6px rgba(255,215,0,0.2); transform:scale(1.02);}
+  100%{ box-shadow:0 0 6px 2px rgba(255,215,0,0.05); transform:scale(1);}
+}
+
+/* ---- Roue principale ---- */
+.roulette{
+  width:var(--size);
+  height:var(--size);
+  border-radius:50%;
+  position:relative;
+  overflow:visible;
+  display:block;
+  transform-origin:center;
+  transition:transform 4s cubic-bezier(.2,.8,.2,1);
+  box-shadow:0 6px 30px rgba(0,0,0,0.7);
+}
+
+/* Couleurs des cases */
+.roulette::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  border-radius:50%;
+  padding:10px;
+  background:conic-gradient(
+    from -90deg,
+    green 0deg 9.73deg,
+    red 9.73deg 19.46deg,
+    black 19.46deg 29.19deg,
+    red 29.19deg 38.92deg,
+    black 38.92deg 48.65deg,
+    red 48.65deg 58.38deg,
+    black 58.38deg 68.11deg,
+    red 68.11deg 77.84deg,
+    black 77.84deg 87.57deg,
+    red 87.57deg 97.3deg,
+    black 97.3deg 107.03deg,
+    red 107.03deg 116.76deg,
+    black 116.76deg 126.49deg,
+    red 126.49deg 136.22deg,
+    black 136.22deg 145.95deg,
+    red 145.95deg 155.68deg,
+    black 155.68deg 165.41deg,
+    red 165.41deg 175.14deg,
+    black 175.14deg 184.87deg,
+    red 184.87deg 194.6deg,
+    black 194.6deg 204.33deg,
+    red 204.33deg 214.06deg,
+    black 214.06deg 223.79deg,
+    red 223.79deg 233.52deg,
+    black 233.52deg 243.25deg,
+    red 243.25deg 252.98deg,
+    black 252.98deg 262.71deg,
+    red 262.71deg 272.44deg,
+    black 272.44deg 282.17deg,
+    red 282.17deg 291.9deg,
+    black 291.9deg 301.63deg,
+    red 301.63deg 311.36deg,
+    black 311.36deg 321.09deg,
+    red 321.09deg 330.82deg,
+    black 330.82deg 340.55deg,
+    red 340.55deg 350.28deg,
+    black 350.28deg 360deg
+  );
+  box-shadow:inset 0 0 0 6px #111;
+}
+
+/* ---- Centre : WINSTREAK ---- */
+.center{
+  position:absolute;
+  left:50%; top:50%;
+  transform:translate(-50%,-50%);
+  width:46%; height:46%;
+  border-radius:50%;
+  background:radial-gradient(circle at 30% 30%, rgba(255,255,255,0.06), rgba(0,0,0,0.55));
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  border:4px solid rgba(0,0,0,0.6);
+  box-shadow:0 6px 18px rgba(0,0,0,0.6), inset 0 2px 6px rgba(255,255,255,0.02);
+}
+.winstreak{
+  font-size:20px;
+  font-weight:700;
+  letter-spacing:1px;
+  color:#ffd700;
+}
+.winstreak-sub{
+  font-size:12px;
+  color:#fff;
+  opacity:0.9;
+  margin-top:6px;
+}
+
+/* ---- Numéros autour ---- */
+.numbers{
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+}
+.numbers span{
+  position:absolute;
+  left:50%; top:50%;
+  transform-origin:0 0;
+  font-size:12px;
+  font-weight:600;
+  width:34px;
+  text-align:center;
+  color:#fff;
+  text-shadow:0 1px 0 rgba(0,0,0,0.8);
+}
+/* le premier (0 vert) */
+.numbers span:nth-child(1){
+  transform:rotate(4.86deg) translate(0,-140px) rotate(-4.86deg);
+  color:#052400;
+}
+
+/* Exemple de pattern pour quelques numéros (tu peux laisser tel quel) */
+.numbers span:nth-child(2){transform:rotate(14.59deg) translate(0,-140px) rotate(-14.59deg);}
+.numbers span:nth-child(3){transform:rotate(24.32deg) translate(0,-140px) rotate(-24.32deg);}
+.numbers span:nth-child(4){transform:rotate(34.05deg) translate(0,-140px) rotate(-34.05deg);}
+.numbers span:nth-child(5){transform:rotate(43.78deg) translate(0,-140px) rotate(-43.78deg);}
+/* ... (les autres suivent le même principe) */
+
+/* ---- Contrôles ---- */
+.controls{
+  margin-top:18px;
+  display:flex;
+  gap:10px;
+  justify-content:center;
+  flex-wrap:wrap;
+}
+input[type="radio"]{display:none;}
+.controls label{
+  background:#ffd700;
+  color:#111;
+  padding:10px 14px;
+  border-radius:10px;
+  font-weight:700;
+  cursor:pointer;
+  box-shadow:0 4px 10px rgba(0,0,0,0.45);
+  transition:transform .12s ease;
+}
+.controls label:hover{transform:translateY(-3px);}
+
+/* ---- Animations de spin ---- */
+#r1:checked ~ .led-ring .roulette{transform:rotate(2880deg);transition:transform 4s cubic-bezier(.15,.8,.2,1);}
+#r2:checked ~ .led-ring .roulette{transform:rotate(2948deg);transition:transform 4.6s cubic-bezier(.15,.8,.2,1);}
+#r3:checked ~ .led-ring .roulette{transform:rotate(3055deg);transition:transform 5.1s cubic-bezier(.15,.8,.2,1);}
+#r4:checked ~ .led-ring .roulette{transform:rotate(3191deg);transition:transform 5.6s cubic-bezier(.15,.8,.2,1);}
