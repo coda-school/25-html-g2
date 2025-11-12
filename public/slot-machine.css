@@ -18,6 +18,12 @@ body{
   font-family: 'Orbitron', sans-serif;
 }
 
+#colortextjouer{
+  color: rgb(0, 0, 0);
+  font-family: 'Orbitron', sans-serif;
+}
+
+
 #misestyle{
   color: rgb(255, 170, 0);
   font-family: 'Orbitron', sans-serif;
@@ -25,7 +31,6 @@ body{
   line-height: 2.0;
   padding: 0 20px;
   font-size: 1rem;
-  text-align: left;
 }
 
 
@@ -69,10 +74,7 @@ ul {
 div{
     margin-bottom: 10px;
     position: center;
-}
 
-input+span{
-    padding-right: 30px;
 }
 
 
