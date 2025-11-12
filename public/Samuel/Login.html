@@ -16,20 +16,25 @@
         <div class="inputBox">
             <input type="text"
                    name="username"
-                   placeholder="Pseudo"
+                   placeholder="pseudo"
                    required="required">
-            <img src="..\image\user.png">
+            <img src="..\image\user.png" class="icon">
         </div>
         <div class="inputBox">
             <input type="password"
                    placeholder="mot de passe"
                    required="required">
-                   <img src="..\image\lock.png">
+                   <img src="..\image\lock.png" class="icon">
 
-            <!--Fonction pour rester connecté-->
+            <!--Fonction pour rester connecté et pour mdp oublié-->
             <div class="remember-forgot">
                 <label>
-                    <input type="checkbox"> Rester connecté<br>
+                    <div>
+                        <input type="checkbox">
+                    </div>
+                    <div class="stay-login">
+                        Rester connecté
+                    </div>
                 </label>
                 <a href="#">Mot de passe oublié?</a>
             </div>
@@ -40,6 +45,7 @@
                 <p>Vous n'avez pas de compte?
                     <a href="#">S'inscrire</a></p>
             </div>
+        </div>
     </form>
 </div>
 
