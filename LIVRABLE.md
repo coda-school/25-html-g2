@@ -80,9 +80,13 @@ Chaque groupe peut choisir un certain nombre **d'exigences complémentaires** en
 Elles doivent être reportées ci-dessous.
 
 ### Exigence 1
+- Bilingue
 
 ### Exigence 2
+- Menu LogIn
 
+### Exigence 3
+- Menu Burger
 
 ## Rendu attendu
 

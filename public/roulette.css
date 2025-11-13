@@ -226,6 +226,48 @@ textarea {
   transform: scale(0.95);
 }
 
+
+.home-btn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: linear-gradient(145deg, #ff4f4f, #b80000);
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 18px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 1rem;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.6);
+  transition: all 0.25s ease;
+  z-index: 1000;
+}
+
+.home-btn:hover {
+  background: linear-gradient(145deg, #ff6666, #d90000);
+  transform: scale(1.08);
+  box-shadow: 0 0 18px rgba(255, 50, 50, 0.8);
+}
+
+.home-btn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  transition: transform 0.25s ease, filter 0.25s ease;
+}
+
+.home-icon {
+  width: 50px;
+  height: 50px;
+  filter: drop-shadow(0 0 8px rgba(255, 0, 4, 0.6));
+  transition: filter 0.25s ease, transform 0.25s ease;
+}
+
+.home-btn:hover .home-icon {
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 14px rgba(255, 80, 80, 0.9));
+}
+
 .site-footer {
   background: linear-gradient(145deg, rgba(255, 80, 180, 0.15), rgba(120, 0, 180, 0.2));
   border-top: 2px solid rgba(242, 44, 51, 0.6);
@@ -298,4 +340,26 @@ textarea {
   text-decoration: underline;
 }
 
+.back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: radial-gradient(circle at center, #ff4f64 20%, #b80000 90%);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  box-shadow: 0 0 15px rgba(255, 70, 82, 0.6);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  z-index: 1000;
+}
 
+.back-to-top:hover {
+  transform: scale(1.1) rotate(5deg);
+}
