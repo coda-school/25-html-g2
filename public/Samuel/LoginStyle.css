@@ -55,6 +55,7 @@ body {
     color: mediumspringgreen;
     padding: 20px 45px 20px 20px;
 }
+
 .inputBox input:user-invalid {
     border-color: #b8007e;
 }
