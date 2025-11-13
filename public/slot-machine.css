@@ -34,7 +34,7 @@ h1{
 
 
 /*couleur texte*/
-#colortext{
+#colortextjeux{
   color: rgb(255, 170, 0);
   font-family: 'Orbitron', sans-serif;
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
@@ -111,8 +111,11 @@ input[type=text]{
   font-family: 'Orbitron', sans-serif;
   color: rgb(0, 0, 0);
   background-color: #ffdf00;
+  border-color: rgb(255, 170, 0);
 }
-
+input[type=text]:hover {
+  border-color: rgb(255, 170, 0);
+}
 
 
 
