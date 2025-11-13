@@ -1,99 +1,104 @@
-/* ---- RESET ---- */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
-}
-
-/* ---- GLOBAL ---- */
 body {
-    background: radial-gradient(circle at top, #1c1c1c, #0a0a0a);
-    color: #fff;
-    text-align: center;
+    background: url("../Image/WinStreak background.png") no-repeat center center fixed;
+    background-size: cover;
+    color: #eaf3ff;
     min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.top-nav {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+}
+
+.top-nav ul {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    gap: 15px;
+    list-style: none;
 }
 
-/* ---- HEADER ---- */
-header {
-    background: linear-gradient(90deg, #ff0033, #ff6600);
-    padding: 2rem 1rem;
-    border-bottom: 3px solid #d4af37;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+.top-nav a {
+    text-decoration: none;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 8px 18px;
+    border-radius: 25px;
+    font-weight: 500;
+    backdrop-filter: blur(8px);
+    transition: 0.3s ease;
 }
 
-header h1 {
+.top-nav a:hover {
+    background: rgba(160, 200, 255, 0.3);
+    box-shadow: 0 0 10px rgba(140, 190, 255, 0.6);
+}
+
+.main-content {
+    text-align: center;
+    padding-top: 140px;
+
+.main-title {
     font-size: 3rem;
     font-weight: 800;
     letter-spacing: 2px;
-    color: #fff;
+    color: #d9e8ff;
+    text-shadow: 0 0 20px rgba(180, 220, 255, 0.9);
 }
 
-header .subtitle {
+.subtitle {
+    margin-top: 15px;
     font-size: 1.2rem;
-    color: #ffe4b5;
-    margin-top: 0.5rem;
+    color: #d2e1ff;
+    line-height: 1.5;
 }
 
-.wallet {
-    margin-top: 1rem;
-    background: rgba(255,255,255,0.1);
-    border: 1px solid #d4af37;
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    border-radius: 12px;
-    font-size: 1.1rem;
-}
-
-.wallet .balance_value {
-    font-weight: bold;
-    color: #d4af37;
-}
-
-/* ---- NAV ---- */
-.user-nav ul {
+.game-selection {
     display: flex;
     justify-content: center;
-    list-style: none;
-    background: #111;
-    padding: 1rem;
-    gap: 2rem;
-}
-
-.user-nav a {
-    text-decoration: none;
-    color: #fff;
-    background: #ff0033;
-    padding: 0.5rem 1.2rem;
-    border-radius: 20px;
-    transition: 0.3s;
-}
-
-.user-nav a:hover {
-    background: #d4af37;
-    color: #000;
-}
-
-/* ---- MAIN ---- */
-main {
-    flex: 1;
-    padding: 2rem;
-}
-
-main h2 {
-    font-size: 2rem;
-    color: #d4af37;
-    margin-bottom: 2rem;
-}
-
-.game-list {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
+    align-items: center;
+    gap: 60px;
+    margin-top: 80px;
     flex-wrap: wrap;
 }
 
-.game-
+.game-card {
+    width: 240px;
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.3rem;
+    border-radius: 20px;
+    border: 1.5px solid rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.07);
+    backdrop-filter: blur(12px);
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.game-card:hover {
+    border-color: #a5c9ff;
+    box-shadow: 0 0 25px rgba(140, 200, 255, 0.7);
+    transform: translateY(-6px);
+    color: #bcdfff;
+}
+
+@media (max-width: 768px) {
+    .main-title {
+        font-size: 2.3rem;
+    }
+
+    .game-selection {
+        gap: 30px;
+    }
+
+    .game-card {
+        width: 180px;
+        height: 120px;
+        font-size: 1.1rem;
+    }
+}
