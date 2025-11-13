@@ -9,3 +9,48 @@
     <link rel="stylesheet" href="SignUpStyle.css">
 </head>
 
+<body>
+<div class="wrapper">
+    <form action="">
+        <h1>Bienvenue</h1>
+        <div class="inputBox">
+            <input type="text"
+                   name="username"
+                   placeholder="pseudo"
+                   required="required">
+            <img src="..\image\user.png" class="icon"
+                 alt="User Icon">
+        </div>
+        <div class="inputBox">
+            <input type="email"
+                   name="email"
+                   placeholder="Adresse mail"
+                   required="required">
+            <img src="..\image\#" class="icon"
+                 alt="Mail Icon">
+        </div>
+        <div class="inputBox">
+            <input type="tel"
+                   name="tel"
+                   placeholder="N° de téléphone"
+                   required="required">
+            <img src="..\image\#" class="icon"
+                 alt="Phone Icon">
+        </div>
+        <input type="password"
+               placeholder="mot de passe"
+               required="required"
+               minlength="6"
+               pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$"
+               title="Le mot de passe doit contenir au minimum: 1 majuscule, 1 minuscule, 1 chiffre, 6  caracteres"
+               >
+            <img src="..\image\lock.png" class="icon"
+                 alt="Lock Icon">
+        </div>
+        <div class="inputBox">
+            <input type="pass">
+        </div>
+    </form>
+</div>
+</body>
+</html>
