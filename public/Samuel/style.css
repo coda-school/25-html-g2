@@ -1,0 +1,26 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url("../image/Lobby Background.png");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+header {
+    width: 50%;
+
+}
+
+header .wallet {
+    position: fixed;
+    top: 10px;
+    right: 100px;
+}
+
+a {
+    display: flex;
+}
