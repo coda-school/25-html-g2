@@ -39,6 +39,7 @@
   --seg-angle: calc(360deg / var(--segments));
 }
 
+
 body {
   background: url('../Image/background-roulette.png') center/cover no-repeat fixed;
   margin: 0;
@@ -291,7 +292,7 @@ textarea {
   color: #ffe3f9;
   text-align: center;
   font-size: 0.95rem;
-  box-shadow: 0 -0 20px rgba(242, 44, 51, 06);
+  box-shadow: 0 -0 20px rgba(black);
 }
 
 .footer-content {
@@ -334,6 +335,9 @@ textarea {
 }
 
 .footer-section ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -344,6 +348,7 @@ textarea {
 }
 
 .footer-section ul li a {
+  text-align: center;
   color: #fd7f7f;
   text-decoration: none;
   font-weight: bold;
