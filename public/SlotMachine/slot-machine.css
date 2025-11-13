@@ -71,7 +71,7 @@ body {
 
 /*Titre*/
 h1{
-    font-size: 8vw;
+  font-size: 8vw;
   text-align: center;
   text-transform: uppercase;
   margin-top: 3rem;
@@ -81,7 +81,6 @@ h1{
 }
 @media (min-width: 600px) {
   h1 {
-  
     font-size: 4rem;
   }
 }
