@@ -1,6 +1,10 @@
+
 .jeu-section h1 {
-    text-align: center;
-    margin-bottom: 5px;
+  color: #b80000;
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+  font-size: 8vw;
+  text-align: center;
+  margin-bottom: 5px;
 }
 
 .image-et-texte {
