@@ -1,8 +1,12 @@
+/* /style.css */
+body {
+    margin: 0;
+    color: #fff1ff;
+    letter-spacing: 0.5px;
+}
+
 body {
   background: url('../Image/fond-box.png') center/cover no-repeat fixed;
-  margin: 0;
-  color: #fff1ff;
-  letter-spacing: 0.5px;
 }
 
 h1 {
