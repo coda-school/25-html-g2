@@ -4,11 +4,17 @@
     <meta charset="UTF-8">
     <title>Jeu de la Roulette</title>
     <link rel="stylesheet" href="roulette.css">
+    <link rel="icon" type="image/png" href="./Image/favicone2.png">
 </head>
 <body>
-    <h1>------HEADER SAMUEL------</h1>
+  <a id="Roulette Game"></a>
+  <a href="Samuel/index.html" class="home-btn">
+  <img src="Image/Home.png" 
+  alt=" " class="home-icon">
+</a>
 </body>
-
+<br>
+<br>
 <section class="jeu-section">
     <h1>ROULETTE GAME</h1>
     <div class="image-et-texte">
@@ -16,7 +22,7 @@
         
         <div class="texte">
             <h2>Règles du jeu :</h2>
-            <p>Comment Jouer ?</p>
+            <h3>Comment Jouer ?</h3>
             <ul>
                 <li>Les joueurs doivent réaliser leur mise avant de cliquer sur «jouer».</li>
                 <li>Cela fera rouler la bille sur le cylindre de la roulette qui, après avoir fait plusieurs tours, s'arrêtera sur l'une de ses cases numérotées de 0 à 36.</li>
@@ -51,15 +57,39 @@
       </div>
     </div>
 </section>
+
+<div class="mise-container">
+  <label>VOTRE MISE :</label>
+  <textarea name="Mise" rows="5" cols="15"></textarea>
+</div>
+
     <!-- contrôles -->
 <div>
       <button class="mon-bouton"> 🎯 JOUER</button>
 </div>
 
-<section class="footer-reseaux">
-    <p>FOOTER</p>
-    <p>Réseaux</p>
-</section>
+<footer class="site-footer">
+    <div class="footer-content">
+      
+    <article class="footer-section legal">
+      <h3><a id="colortextred">Mentions légales</a></h3>
+      <p><a id="colortextwhite">Ce site est destiné à un public majeur. Le jeu comporte des risques. Jouez de manière responsable.</a></p>
+      <p><a id="colortextwhite">2025 WinStreak<br>© Tous droits réservés.</a></p>
+    </article>
 
+<div class="footer-section other-games">
+  <h3>Jouer à d'autres jeux</h3>
+    <ul>
+      <li><h2><a href="Slot-machine.html">Slot-Machine</a></h2></li>
+      <li><h2><a href="Box.html">Box</a></h2></li>
+    </ul>
+  <h3>Liens utiles</h3>
+    <ul>
+      <li><h2><a href="https://github.com/coda-school/25-html-g2.git">🔗GitHub</a></h2></li>
+      <li><h2><a href="https://coda-school.github.io/speedlify-dijon-b1-2025/25-html-g2/">🔗Speedlify</a></h2></li>
 
+    </ul>
+</div>
+    <a href="#Roulette Game" class="back-to-top" >⬆</a>
+</footer>
 </html>

@@ -1,50 +1,64 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
+  <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="Samuel/style.css">
-    <title>WinStreak</title>
-    <link rel="stylesheet" href="Samuel/style.css">
-</head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WinStreak – Slot Machine</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="./Image/favicone2.png">
+    <link rel="stylesheet" href="slot-machine.css">
+  </head>
 
-
-<body>
-    <div style="text-align:center">
-    <h1>Slot-Machine</h1>
-
-    <!-- <dt></dt><dt></dt><dt></dt> -->
+  <header>
     
-    <form>
-        <div>
-        <strong> mise:</strong>
-        <input type="text" id="uname" required />
-        <span class="validity"></span>
-        </div>
+  </header>
 
-    </form>
+  <body style="text-align:center">
+    
+    <h1>SLOT-MACHINE</h1>
     
 
-
-
-    <input style="text-align:center" class="style1" type="button" value="Jouer"/>
-    <!-- 9;8;7;6;5;4;3;2;1<br>
-    9;8;7;6;5;4;3;2;1<br>
-    9;8;7;6;5;4;3;2;1<br> -->
-
-    <!-- <ol>Explication:
-        <li>Mettre une mise</li>
-        <li>Jouer</li>
-    </ol>
-        
     <ul>
-        <li>Trois même chiffres alignées pour WIN</li>
-        <li>Sinon LOOSE</li>
-    
+      <p class="block">7</p>
+      <p class="block">7</p>
+      <p class="block">7</p>
     </ul>
-    -->
-    
-    </div>
-    
 
-</body>
+    <form id="misestyle" id="">
+      <strong><span style="margin: auto;">Mise: </span></strong>
+      <input type="text" id="uname"required>
+    </form>
+
+    <section class="spacespace"></section>
+    <!--<img class="image" src="/public/Image/slot-machine.png" width="150" alt="slot-machine">-->
+    <input type="button" class="styleslot" id="colortextjouer" value="Jouer">
+    <section class="spacejouer"></section>
+  
+  </body>
+
+
+  <footer class="site-footer footer-content">
+
+    <article class="footer-section legal">
+      <h3><a id="colortextyellow">Mentions légales</a></h3>
+      <p><a id="colortextwhite">Ce site est destiné à un public majeur. Le jeu comporte des risques. Jouez de manière responsable.</a></p>
+      <p><a id="colortextwhite">2025 WinStreak<br>© Tous droits réservés.</a></p>
+    </article>
+
+    <nav class="footer-section other-games">
+      <h3><a id="colortextyellow">Jouer à d'autres jeux :</a></h3>
+      <ul>
+        <li>
+          <a href="Box.html"><img class="image" src="/public/Image/box1.png" width="150" alt="Box Opening"></a>
+          <h2><a  id="colortext">Box</a></h2>
+        </li>
+        <li>
+          <a href="Roulette.html"><img class="image" src="/public/Image/roulettefondtransparent.png" width="100" alt="Jeux Roulette"></a>
+          <h2><a id="colortext">Roulette</a></h2>
+        </li>
+      </ul>
+    </nav>
+
+  </footer>
+
 </html>

@@ -1,37 +1,220 @@
+body {
+  background: url('Image/background\ slot-machine.png') center/cover no-repeat fixed;
+  margin: 0;
+  color: #000000;
+  letter-spacing: 0.5px;
+  height: 100vh;
+}
+
+.spacejouer {
+  margin-top: 90px;
+}
+.spacespace {
+  margin-top: 40px;
+}
+
+
+/*Titre*/
+h1{
+  font-size: 4rem;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 3rem;
+  color: rgb(255, 170, 0);
+  font-family: 'Orbitron', sans-serif;
+  text-shadow: 0 0 10px rgb(0, 0, 0);
+  white-space: nowrap;
+
+}
+@media (max-width: 600px) {
+  h1 {
+    font-size: 8vw;
+  }
+}
+
+
+/*couleur texte*/
+#colortext{
+  color: rgb(255, 170, 0);
+  font-family: 'Orbitron', sans-serif;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+}
+#colortextyellow{
+  color: rgb(255, 251, 32);
+  font-family: 'Orbitron', sans-serif;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+}
+#colortextwhite{
+  color: rgb(255, 255, 255);
+  font-family: 'Orbitron', sans-serif;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+}
+
+
+
+
+
+
+/*slot*/
+.block
+{
+  flex: 1;
+  aspect-ratio: 1 / 1;
+  border: 3px solid rgb(255, 170, 0);
+  border-radius: 10px;
+  background-color: #ffdf00;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: clamp(2rem, 6vw, 3rem);
+  box-sizing: border-box;
+  max-width: 100px;
+  font-family: 'Orbitron', sans-serif;
+
+}
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2vw;
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 600px;
+}
+
+
+
+
 /*mise*/
 div{
     margin-bottom: 10px;
-    position: relative;
+    position: center;
+
+}
+#misestyle{
+  color: rgb(255, 170, 0);
+  font-family: 'Orbitron', sans-serif;
+  border: 0;
+  line-height: 2.0;
+  padding: 0 20px;
+  font-size: 1rem;
+  text-shadow: 0 0 5px rgb(0, 0, 0);
 }
 
-input+span{
-    padding-right: 30px;
+
+
+
+/*Input Style*/
+input[type=text]{
+  font-family: 'Orbitron', sans-serif;
+  color: rgb(0, 0, 0);
+  background-color: #ffdf00;
 }
+
 
 
 
 
 /*bouton jouer*/
-.style1 {
+.styleslot {
   border: 0;
-  line-height: 2.5;
+  line-height: 2.0;
   padding: 0 20px;
-  font-size: 1rem;
+  font-size: 2rem;
   text-align: center;
-  color: #fff;
-  text-shadow: 1px 1px 1px #000000;
+  color: #000000;
   border-radius: 25px;
-  background-color: rgb(170, 0, 0);
-  background-image: linear-gradient(
-    to top left,
-    rgb(0 0 0 / 20%),
-    rgb(0 0 0 / 20%) 30%,
-    rgb(0 0 0 / 0%)
-  );
+  background-color: rgb(255, 170, 0);
   box-shadow:
     inset 2px 2px 3px rgb(255 255 255 / 60%),
     inset -2px -2px 3px rgb(0 0 0 / 60%);
 }
-.style1:hover {
-  background-color: rgb(0, 159, 50);
+.styleslot:hover {
+  background-color: #ffdf00;
 }
+#colortextjouer{
+  color: rgb(0, 0, 0);
+  font-family: 'Orbitron', sans-serif;
+  text-shadow: 0 0 5px rgb(255, 255, 255);
+}
+
+
+
+
+/*pied-de-pages*/
+.site-footer {
+  background: linear-gradient(145deg, rgba(255, 200, 0, 0.1), rgba(255, 150, 0, 0.2));
+  border-top: 2px solid rgba(255, 230, 50, 0.7);
+  padding: 3rem 1rem;
+  color: #fff7cc;
+  text-align: center;
+  font-size: 0.95rem;
+  box-shadow: 0 -0 20px rgba(255, 230, 50, 0.3);
+
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.footer-section {
+  flex: 1 1 250px;
+  min-width: 220px;
+  background: rgba(255, 220, 50, 0.08);
+  border: 1px solid rgba(255, 230, 70, 0.5);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 0 15px rgba(255, 230, 50, 0.2), inset 0 0 8px rgba(255, 250, 120, 0.1);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.footer-section:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 25px rgba(255, 240, 100, 0.4), inset 0 0 12px rgba(255, 250, 150, 0.15);
+}
+
+.footer-section h3 {
+  color: #ffdf00;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  text-shadow:
+    -2px 2px 0 #000,
+    0 0 10px rgba(255, 230, 100, 0.8);
+}
+
+.footer-section p {
+  line-height: 1.6;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 0.7rem;
+}
+
+.footer-section ul li a {
+  color: #ffe870;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.25s ease, text-shadow 0.25s ease;
+}
+
+.footer-section ul li a:hover img {
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 10px rgba(255, 227, 16, 0.477));
+}
+
+
+

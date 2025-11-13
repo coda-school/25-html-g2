@@ -188,15 +188,27 @@ body {
   color:#f9fff8;
 }
 
+.mise-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: fit-content;
+  margin: 50px auto;
+}
+
+textarea {
+  max-width: 300px;
+  max-height: 10px;
+}
 
 /* ---- Contrôles ---- */
 .mon-bouton {
-  display: block;       /* nécessaire pour margin auto */
-  margin: 100px auto;   /* centre horizontalement et ajoute un peu d’espace vertical */
+  display: block;
+  margin: 100px auto;
   font-size: 20px;
   padding: 15px 30px;
-  background: #ffd700;
-  color: black;
+  background:darkred;
+  color: rgb(248, 242, 242);
   border-radius: 10px;
   border: none;
   cursor: pointer;
@@ -211,13 +223,143 @@ body {
 
 /* Effet quand on clique */
 .mon-bouton:active {
-  transform: scale(0.95); /* bouton “pressé” */
+  transform: scale(0.95);
 }
 
-.footer-reseaux {
+
+.home-btn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: linear-gradient(145deg, #ff4f4f, #b80000);
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 18px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 1rem;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.6);
+  transition: all 0.25s ease;
+  z-index: 1000;
+}
+
+.home-btn:hover {
+  background: linear-gradient(145deg, #ff6666, #d90000);
+  transform: scale(1.08);
+  box-shadow: 0 0 18px rgba(255, 50, 50, 0.8);
+}
+
+.home-btn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  transition: transform 0.25s ease, filter 0.25s ease;
+}
+
+.home-icon {
+  width: 50px;
+  height: 50px;
+  filter: drop-shadow(0 0 8px rgba(255, 0, 4, 0.6));
+  transition: filter 0.25s ease, transform 0.25s ease;
+}
+
+.home-btn:hover .home-icon {
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 14px rgba(255, 80, 80, 0.9));
+}
+
+.site-footer {
+  background: linear-gradient(145deg, rgba(255, 80, 180, 0.15), rgba(120, 0, 180, 0.2));
+  border-top: 2px solid rgba(242, 44, 51, 0.6);
+  padding: 3rem 1rem;
+  color: #ffe3f9;
+  text-align: center;
+  font-size: 0.95rem;
+  box-shadow: 0 -0 20px rgba(242, 44, 51, 06);
+}
+
+.footer-content {
   display: flex;
-  justify-content: center; /* centre horizontalement */
-  align-items: center;     /* centre verticalement si le conteneur a une hauteur */
-  gap: 20px;               /* espace entre les éléments */
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
+.footer-section {
+  flex: 1 1 250px;
+  min-width: 220px;
+  background: rgba(255, 100, 220, 0.08);
+  border: 1px solid rgba(244, 91, 102, 0.5);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 0 15px rgba(241, 41, 51, 0.2), inset 0 0 8px rgba(235, 28, 83, 0.1);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.footer-section:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 25px rgba(232, 16, 16, 0.35), inset 0 0 12px rgba(242, 15, 15, 0.15);
+}
+
+.footer-section h3 {
+  color: #f75252;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  text-shadow:
+    -2px 2px 0 #000,
+    0 0 10px rgba(255, 70, 95, 0.8);
+}
+
+.footer-section p {
+  line-height: 1.6;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 0.7rem;
+}
+
+.footer-section ul li a {
+  color: #fd7f7f;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.25s ease, text-shadow 0.25s ease;
+}
+
+.footer-section ul li a:hover {
+  color: #ff6363;
+  text-shadow: 0 0 8px rgba(243, 10, 10, 0.7);
+  text-decoration: underline;
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: radial-gradient(circle at center, #ff4f64 20%, #b80000 90%);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  box-shadow: 0 0 15px rgba(255, 70, 82, 0.6);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  z-index: 1000;
+}
+
+.back-to-top:hover {
+  transform: scale(1.1) rotate(5deg);
+}
