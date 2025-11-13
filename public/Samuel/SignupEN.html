@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,
+    initial-scale=1.0">
+    <title>WinStreak | Sign Up</title>
+    <link rel="stylesheet" href="SignupEnStyle.css">
+</head>
+
+<body>
+<div class="wrapper">
+    <form action="">
+        <h1>Welcome</h1>
+        <div class="inputBox">
+            <input type="text"
+                   name="username"
+                   placeholder="username"
+                   required="required">
+            <img src="..\image\user.png" class="icon"
+                 alt="User Icon">
+        </div>
+        <div class="inputBox">
+            <input type="email"
+                   name="email"
+                   placeholder="email"
+                   required="required">
+            <img src="..\image\mail.png" class="icon"
+                 alt="Mail Icon">
+        </div>
+        <div class="inputBox">
+            <input type="tel"
+                   name="tel"
+                   placeholder="phone number"
+                   required="required">
+            <img src="..\image\phone.png" class="icon"
+                 alt="Phone Icon">
+        </div>
+        <div class="inputBox">
+            <input type="password"
+                   placeholder="password"
+                   required="required"
+                   minlength="6"
+                   pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$"
+                   title="The password must have: 1 capital letter, 1 tiny letter, 1 number, 6 characters"
+            >
+            <img src="..\image\lock.png" class="icon"
+                 alt="Lock Icon">
+        </div>
+        <div class="inputBox">
+            <input type="password"
+                   placeholder="password confirmation"
+                   required="required"
+                   minlength="6"
+                   pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$"
+                   title="The password must be the same as the one you previously wrote"
+            >
+            <img src="..\image\lock.png" class="icon">
+        </div>
+        <hr>
+        <div class="Login-link">
+            <p>Already have an account?
+                <a href="LoginEN.html">Log In</a></p>
+        </div>
+
+        <button type="submit" class="btn">Sign Up</button>
+    </form>
+</div>
+</body>
+</html>

@@ -17,9 +17,11 @@ body {
     background-attachment: fixed;
 }
 
+
+
 .wrapper {
     width: 420px;
-    /*height: 500px;*/
+    height: 395px;
     background: transparent;
     border: 2px solid rgba(255, 255, 255, .2);
     backdrop-filter: blur(20px);
@@ -53,13 +55,8 @@ body {
     color: mediumspringgreen;
     padding: 20px 45px 20px 20px;
 }
-
 .inputBox input:user-invalid {
     border-color: #b8007e;
-}
-
-.inputBox input:blank {
-    border-color: transparent;
 }
 
 .inputBox .icon {
@@ -77,8 +74,40 @@ body {
     color: mediumspringgreen;
 }
 
+.wrapper .remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: 15px 0 15px;
+}
+
+.remember-forgot label {
+    display: flex;
+    font-size: 14.5px;
+}
+
 input.check {
     width: auto;
+}
+
+.remember-forgot :hover {
+    text-decoration: underline;
+}
+
+.remember-forgot label input {
+    accent-color: white;
+    margin-right: 10px;
+    height: min-content;
+}
+
+.remember-forgot a {
+    color: mediumspringgreen;
+    font-size: 14.5px;
+    text-decoration: none;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
 }
 
 .wrapper .btn {
@@ -95,23 +124,19 @@ input.check {
     color: mediumspringgreen;
     font-weight: 600;
 }
-hr {
-    height: 1px;
-    background-color: rebeccapurple;
-    border: none;
-}
-.wrapper .Login-link {
+
+.wrapper .register-link {
     font-size: 14.5px;
     text-align: center;
     margin: 20px 0 15px;
 }
 
-.wrapper .Login-link p a {
+.wrapper .register-link p a {
     color: greenyellow;
     text-decoration: none;
     font-weight: 600;
 }
 
-.Login-link:hover p a:hover {
+.register-link:hover p a:hover {
     text-decoration: underline;
 }
