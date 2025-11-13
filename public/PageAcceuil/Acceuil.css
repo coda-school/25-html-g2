@@ -1,0 +1,99 @@
+/* ---- RESET ---- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/* ---- GLOBAL ---- */
+body {
+    background: radial-gradient(circle at top, #1c1c1c, #0a0a0a);
+    color: #fff;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* ---- HEADER ---- */
+header {
+    background: linear-gradient(90deg, #ff0033, #ff6600);
+    padding: 2rem 1rem;
+    border-bottom: 3px solid #d4af37;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: #fff;
+}
+
+header .subtitle {
+    font-size: 1.2rem;
+    color: #ffe4b5;
+    margin-top: 0.5rem;
+}
+
+.wallet {
+    margin-top: 1rem;
+    background: rgba(255,255,255,0.1);
+    border: 1px solid #d4af37;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 12px;
+    font-size: 1.1rem;
+}
+
+.wallet .balance_value {
+    font-weight: bold;
+    color: #d4af37;
+}
+
+/* ---- NAV ---- */
+.user-nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    background: #111;
+    padding: 1rem;
+    gap: 2rem;
+}
+
+.user-nav a {
+    text-decoration: none;
+    color: #fff;
+    background: #ff0033;
+    padding: 0.5rem 1.2rem;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.user-nav a:hover {
+    background: #d4af37;
+    color: #000;
+}
+
+/* ---- MAIN ---- */
+main {
+    flex: 1;
+    padding: 2rem;
+}
+
+main h2 {
+    font-size: 2rem;
+    color: #d4af37;
+    margin-bottom: 2rem;
+}
+
+.game-list {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.game-
