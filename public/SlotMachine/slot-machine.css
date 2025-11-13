@@ -1,6 +1,5 @@
-<<<<<<< HEAD:public/slot-machine.css
 body {
-  background: url('Image/background\ slot-machine.png') center/cover no-repeat fixed;
+  background: url('../Image/background-slot-machine.png') center/cover no-repeat fixed;
   margin: 0;
   color: #000000;
   letter-spacing: 0.5px;
@@ -219,3 +218,6 @@ input[type=text]:hover {
   transform: scale(1.1);
   filter: drop-shadow(0 0 10px rgba(255, 227, 16, 0.477));
 }
+
+
+
