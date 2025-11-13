@@ -1,3 +1,77 @@
+.home-btn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: linear-gradient(145deg, rgb(255, 251, 32), rgb(255, 170, 0));
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 18px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 1rem;
+  box-shadow: 0 0 10px rgb(255, 170, 0);
+  transition: all 0.25s ease;
+  z-index: 1000;
+}
+
+.home-btn:hover {
+  background: linear-gradient(145deg, rgb(255, 251, 32), rgb(255, 170, 0));
+  transform: scale(1.08);
+  box-shadow: 0 0 18px rgb(255, 170, 0);
+}
+
+.home-btn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  transition: transform 0.25s ease, filter 0.25s ease;
+}
+
+.home-icon {
+  width: 50px;
+  height: 50px;
+  filter: drop-shadow(0 0 8px rgb(255, 170, 0));
+  transition: filter 0.25s ease, transform 0.25s ease;
+}
+
+.home-btn:hover .home-icon {
+  transform: scale(1.1);
+  filter: drop-shadow(0 0 14px  rgb(255, 251, 32));
+}
+
+header{
+  font-size: 4rem;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 3rem;
+  color: rgb(255, 170, 0);
+  font-family: 'Orbitron', sans-serif;
+  text-shadow: 0 0 10px rgb(0, 0, 0);
+  white-space: nowrap;
+
+}
+@media (max-width: 600px) {
+  h1 {
+    font-size: 8vw;
+  }
+}
+
+@media (max-width: 300px) {
+  .home-btn
+  {
+    font-size: 8vw;
+  }
+  .home-btn:hover
+  {
+    font-size: 8vw;
+  }
+  .home-icon
+  {
+    font-size: 8vw;
+  }
+}
+
+/*Corps de la pages*/
 body {
   background: url('../Image/background-slot-machine.png') center/cover no-repeat fixed;
   margin: 0;
