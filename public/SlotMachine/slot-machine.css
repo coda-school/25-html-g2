@@ -71,7 +71,7 @@ body {
 
 /*Titre*/
 h1{
-  font-size: 4rem;
+    font-size: 8vw;
   text-align: center;
   text-transform: uppercase;
   margin-top: 3rem;
@@ -79,25 +79,26 @@ h1{
   font-family: 'Orbitron', sans-serif;
   text-shadow: 0 0 10px rgb(0, 0, 0);
 }
-@media (max-width: 600px) {
+@media (min-width: 600px) {
   h1 {
-    font-size: 8vw;
+  
+    font-size: 4rem;
   }
 }
 
 
 /*couleur texte*/
-#colortextjeux{
+.colortextjeux{
   color: rgb(255, 170, 0);
   font-family: 'Orbitron', sans-serif;
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
 }
-#colortextyellow{
+.colortextyellow{
   color: rgb(255, 251, 32);
   font-family: 'Orbitron', sans-serif;
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
 }
-#colortextwhite{
+.colortextwhite{
   color: rgb(255, 255, 255);
   font-family: 'Orbitron', sans-serif;
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
@@ -141,11 +142,6 @@ ul {
 
 
 /*mise*/
-div{
-    margin-bottom: 10px;
-    position: center;
-
-}
 #misestyle{
   color: rgb(255, 170, 0);
   font-family: 'Orbitron', sans-serif;
@@ -175,6 +171,7 @@ input[type=text]:hover {
 
 /*bouton jouer*/
 .styleslot {
+  
   border: 0;
   line-height: 2.0;
   padding: 0 20px;
