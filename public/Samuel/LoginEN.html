@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,
+    initial-scale=1.0">
+    <title>WinStreak | Log In</title>
+    <link rel="stylesheet" href="LoginEnStyle.css">
+</head>
+
+<body>
+<div class="wrapper">
+    <form action="">
+        <h1>Welcome</h1>
+        <div class="inputBox">
+            <input type="text"
+                   name="username"
+                   placeholder="username"
+                   required="required">
+            <img src="..\image\user.png" class="icon"
+                 alt="User Icon">
+        </div>
+        <div class="inputBox">
+            <input type="password"
+                   placeholder="password"
+                   required="required"
+                   minlength="6"
+                   pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$"
+                   title="The password must have: 1 capital letter, 1 tiny letter, 1 number, 6 characters"
+            >
+            <img src="..\image\lock.png" class="icon"
+                 alt="Lock Icon">
+
+            <div class="remember-forgot">
+                <label>
+                    <input type="checkbox" class="check">
+                    Remember me
+                </label>
+                <a href="#">Forgot password?</a>
+            </div>
+
+            <button type="submit" class="btn">Log In</button>
+
+            <div class="register-link">
+                <p>You don't have an account?
+                    <a href="SignupEN.html">Sign Up</a></p>
+            </div>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>

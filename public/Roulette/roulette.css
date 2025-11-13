@@ -6,11 +6,20 @@
   text-align: center;
   margin-bottom: 5px;
 }
+.image-et-texte
+{
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  margin-left: 30px;
+}
 
-.image-et-texte {
-    display: flex;          /* met l'image et le texte sur la même ligne */
-    align-items: flex-start; /* aligne le texte en haut de l'image */
-    gap: 20px;              /* espace entre l'image et le texte */
+@media (min-width: 512px) {
+
+  .image-et-texte
+  {
+    flex-direction: row;
+  }
 }
 
 .texte h2 {
@@ -29,6 +38,7 @@
   --segments: 37;
   --seg-angle: calc(360deg / var(--segments));
 }
+
 
 body {
   background: url('../Image/background-roulette.png') center/cover no-repeat fixed;
@@ -194,6 +204,9 @@ body {
 
 .mise-container {
   display: flex;
+  font-size: 2vw;
+  color: #f32c2c;
+  text-shadow: 0 0 100px rgba(8, 7, 7, 0.6);
   align-items: center;
   gap: 10px;
   width: fit-content;
@@ -279,7 +292,7 @@ textarea {
   color: #ffe3f9;
   text-align: center;
   font-size: 0.95rem;
-  box-shadow: 0 -0 20px rgba(242, 44, 51, 06);
+  box-shadow: 0 -0 20px rgba(black);
 }
 
 .footer-content {
@@ -322,6 +335,9 @@ textarea {
 }
 
 .footer-section ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -332,6 +348,7 @@ textarea {
 }
 
 .footer-section ul li a {
+  text-align: center;
   color: #fd7f7f;
   text-decoration: none;
   font-weight: bold;

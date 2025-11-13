@@ -58,7 +58,7 @@ body {
     border-color: #b8007e;
 }
 
-.inputBox input:blank {
+.inputBox input:user-invalid:blank {
     border-color: transparent;
 }
 
