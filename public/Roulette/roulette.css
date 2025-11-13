@@ -6,11 +6,20 @@
   text-align: center;
   margin-bottom: 5px;
 }
+.image-et-texte
+{
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  margin-left: 30px;
+}
 
-.image-et-texte {
-    display: flex;          /* met l'image et le texte sur la même ligne */
-    align-items: flex-start; /* aligne le texte en haut de l'image */
-    gap: 20px;              /* espace entre l'image et le texte */
+@media (min-width: 512px) {
+
+  .image-et-texte
+  {
+    flex-direction: row;
+  }
 }
 
 .texte h2 {
@@ -194,6 +203,9 @@ body {
 
 .mise-container {
   display: flex;
+  font-size: 2vw;
+  color: #f32c2c;
+  text-shadow: 0 0 100px rgba(8, 7, 7, 0.6);
   align-items: center;
   gap: 10px;
   width: fit-content;
