@@ -22,7 +22,7 @@
 
 .home-btn {
   position: absolute;
-  top: 20px;
+  top: 50px;
   left: 20px;
   transition: transform 0.25s ease, filter 0.25s ease;
 }
@@ -34,7 +34,7 @@
   transition: filter 0.25s ease, transform 0.25s ease;
 }
 
-.home-btn:hover .home-icon {
+.home-btn:hover {
   transform: scale(1.1);
   filter: drop-shadow(0 0 14px  rgb(255, 251, 32));
 }
@@ -50,26 +50,7 @@ header{
   white-space: nowrap;
 
 }
-@media (max-width: 600px) {
-  h1 {
-    font-size: 8vw;
-  }
-}
 
-@media (max-width: 300px) {
-  .home-btn
-  {
-    font-size: 8vw;
-  }
-  .home-btn:hover
-  {
-    font-size: 8vw;
-  }
-  .home-icon
-  {
-    font-size: 8vw;
-  }
-}
 
 /*Corps de la pages*/
 body {
@@ -97,8 +78,6 @@ h1{
   color: rgb(255, 170, 0);
   font-family: 'Orbitron', sans-serif;
   text-shadow: 0 0 10px rgb(0, 0, 0);
-  white-space: nowrap;
-
 }
 @media (max-width: 600px) {
   h1 {
