@@ -9,12 +9,12 @@ body {
 .spacejouer {
   margin-top: 90px;
 }
-
 .spacespace {
   margin-top: 40px;
 }
 
 
+/*Titre*/
 h1{
   font-size: 4rem;
   text-align: center;
@@ -26,7 +26,6 @@ h1{
   white-space: nowrap;
 
 }
-
 @media (max-width: 600px) {
   h1 {
     font-size: 8vw;
@@ -34,6 +33,7 @@ h1{
 }
 
 
+/*couleur texte*/
 #colortext{
   color: rgb(255, 170, 0);
   font-family: 'Orbitron', sans-serif;
@@ -44,7 +44,6 @@ h1{
   font-family: 'Orbitron', sans-serif;
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
 }
-
 #colortextwhite{
   color: rgb(255, 255, 255);
   font-family: 'Orbitron', sans-serif;
@@ -70,9 +69,9 @@ h1{
   font-size: clamp(2rem, 6vw, 3rem);
   box-sizing: border-box;
   max-width: 100px;
+  font-family: 'Orbitron', sans-serif;
 
 }
-
 ul {
   display: flex;
   justify-content: center;
@@ -83,7 +82,6 @@ ul {
   margin: 0 auto;
   width: 100%;
   max-width: 600px;
-
 }
 
 
@@ -108,6 +106,16 @@ div{
 
 
 
+/*Input Style*/
+input[type=text]{
+  font-family: 'Orbitron', sans-serif;
+  color: rgb(0, 0, 0);
+  background-color: #ffdf00;
+}
+
+
+
+
 
 /*bouton jouer*/
 .styleslot {
@@ -126,13 +134,12 @@ div{
 .styleslot:hover {
   background-color: #ffdf00;
 }
-
-
 #colortextjouer{
   color: rgb(0, 0, 0);
   font-family: 'Orbitron', sans-serif;
   text-shadow: 0 0 5px rgb(255, 255, 255);
 }
+
 
 
 
