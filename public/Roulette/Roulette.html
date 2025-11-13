@@ -1,95 +1,91 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <title>Jeu de la Roulette</title>
-    <link rel="stylesheet" href="roulette.css">
-    <link rel="icon" type="../image/png" href="../Image/favicone2.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jeu de la Roulette</title>
+  <link rel="stylesheet" href="roulette.css">
+  <link rel="icon" type="image/png" href="/Image/favicone2.png">
+  <meta name="description" content="Jeu de la roulette en ligne — misez et tentez votre chance. Jouez de manière responsable.">
 </head>
 <body>
-  <a id="Roulette Game"></a>
-  <a href="../PageAcceuil/index.html" class="home-btn">
-  <img src="../Image/Home.png"
-  alt=" " class="home-icon">
-</a>
-</body>
-<br>
-<br>
-<section class="jeu-section">
-    <h1>ROULETTE GAME</h1>
-    <div class="image-et-texte">
-        <img src="../Image/roulette.png" width="220" height="220" alt="Logo roulette">
-        
+
+  <header>
+    <a id="roulette-game"></a>
+    <a href="/Samuel/index.html" class="home-btn" aria-label="Retour à l'accueil">
+      <img src="/Image/Home.png" alt="Accueil" class="home-icon">
+    </a>
+    <br>
+    <br>
+  </header>
+
+  <main>
+    <section class="jeu-section">
+      <h1>ROULETTE GAME</h1>
+      <div class="image-et-texte">
+        <img src="/Image/roulette.png" width="220" height="220"
+        alt="Roue de roulette du jeu">
         <div class="texte">
-            <h2>Règles du jeu :</h2>
-            <h3>Comment Jouer ?</h3>
-            <ul>
-                <li>Les joueurs doivent réaliser leur mise avant de cliquer sur «jouer».</li>
-                <li>Cela fera rouler la bille sur le cylindre de la roulette qui, après avoir fait plusieurs tours, s'arrêtera sur l'une de ses cases numérotées de 0 à 36.</li>
-                <li>La case où elle tombera déterminera le <strong>numéro gagnant.</strong></li>
-            </ul>
+          <h2>Règles du jeu</h2>
+          <h3>Comment jouer ?</h3>
+          <ul>
+            <li>Faites votre mise avant de cliquer sur « Jouer ».</li>
+            <li>La bille tournera et s’arrêtera sur une case numérotée de 0 à 36.</li>
+            <li>La case où elle tombera déterminera le <strong>numéro gagnant</strong>.</li>
+          </ul>
         </div>
-    </div>
-</section>
-
-
-<div class="circle-roulette">
-
-    <div class="pointer"></div>
-
-<section>
-    <!-- anneau clignotant + roue -->
-    <div class="led-ring">
-      <div class="outer" style="display:inline-block; position:relative;">
-
-
-        <!-- élément qui tournera -->
-      <div class="roulette" role="img" aria-label="Roulette">
       </div>
+    </section>
 
-          <!-- centre -->
+    <section class="circle-roulette" aria-label="Roulette animée">
+      <div class="pointer"></div>
+      <div class="led-ring">
+        <div class="outer">
+          <div class="roulette" role="img" aria-label="Roue de la roulette"></div>
           <div class="center">
             <div class="winstreak">WINSTREAK</div>
             <div class="winstreak-sub"></div>
           </div>
         </div>
-
       </div>
+    </section>
+
+    <section class="mise-container">
+      <label for="mise">Votre mise :</label>
+      <textarea id="mise" name="Mise" rows="3" cols="15" aria-label="Zone de saisie pour la mise"></textarea>
+    </section>
+
+    <div class="controls">
+      <button class="mon-bouton" aria-label="Lancer la roulette">🎯 JOUER</button>
     </div>
-</section>
+  </main>
 
-<div class="mise-container">
-  <label>VOTRE MISE :</label>
-  <textarea name="Mise" rows="5" cols="15"></textarea>
-</div>
-
-    <!-- contrôles -->
-<div>
-      <button class="mon-bouton"> 🎯 JOUER</button>
-</div>
-
-<footer class="site-footer">
+  <footer class="site-footer">
     <div class="footer-content">
-      
-    <article class="footer-section legal">
-      <h3><a id="colortextred">Mentions légales</a></h3>
-      <p><a id="colortextwhite">Ce site est destiné à un public majeur. Le jeu comporte des risques. Jouez de manière responsable.</a></p>
-      <p><a id="colortextwhite">2025 WinStreak<br>© Tous droits réservés.</a></p>
-    </article>
 
-<div class="footer-section other-games">
-  <h3>Jouer à d'autres jeux</h3>
-    <ul>
-      <li><h2><a href="../SlotMachine/Slot-machine.html">Slot-Machine</a></h2></li>
-      <li><h2><a href="../Box/Box.html">Box</a></h2></li>
-    </ul>
-  <h3>Liens utiles</h3>
-    <ul>
-      <li><h2><a href="https://github.com/coda-school/25-html-g2.git">🔗GitHub</a></h2></li>
-      <li><h2><a href="https://coda-school.github.io/speedlify-dijon-b1-2025/25-html-g2/">🔗Speedlify</a></h2></li>
+      <article class="footer-section legal">
+        <h3>Mentions légales</h3>
+        <p>Ce site est destiné à un public majeur. Le jeu comporte des risques. Jouez de manière responsable.</p>
+        <p>© 2025 WinStreak — Tous droits réservés.</p>
+      </article>
 
-    </ul>
-</div>
-    <a href="#Roulette Game" class="back-to-top" >⬆</a>
-</footer>
+      <article class="footer-section other-games">
+        <h3>Jouer à d'autres jeux</h3>
+        <ul>
+          <li><a href="/SlotMachine/Slot-machine.html">🎰 Slot Machine</a></li>
+          <li><a href="/Box/Box.html">🥊 Box</a></li>
+        </ul>
+        <h3>Liens utiles</h3>
+        <ul>
+          <li><a href="https://github.com/coda-school/25-html-g2.git">🔗 GitHub</a></li>
+          <li><a href="https://coda-school.github.io/speedlify-dijon-b1-2025/25-html-g2/">🔗 Speedlify</a></li>
+        </ul>
+      </article>
+    </div>
+
+    <a href="#roulette-game" class="back-to-top" aria-label="Revenir en haut">⬆</a>
+  </footer>
+
+</body>
 </html>
+

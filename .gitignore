@@ -1,3 +1,4 @@
 .idea
 .vite
 _private
+.DS_Store
