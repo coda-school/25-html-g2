@@ -272,6 +272,17 @@ textarea {
   left: 20px;
   transition: transform 0.25s ease, filter 0.25s ease;
 }
+@media (max-width: 512px) {
+  .home-btn {
+    bottom: 610px;   /* position en bas */
+    top: auto;      /* on annule la position top */
+    left: 50%;      /* centré horizontalement */
+    transform: translateX(-50%);
+    font-size: 0px;
+    padding: 0px;
+    display: block; 
+  }
+}
 
 .home-icon {
   width: 50px;
