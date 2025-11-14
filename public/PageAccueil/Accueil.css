@@ -6,6 +6,11 @@ body {
     overflow-x: hidden;
 }
 
+.flag-icon {
+    width: 35px;
+    height: 35px;
+}
+
 .top-nav {
     position: absolute;
     top: 20px;
