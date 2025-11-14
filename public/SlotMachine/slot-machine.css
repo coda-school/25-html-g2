@@ -22,7 +22,7 @@
 
 .home-btn {
   position: absolute;
-  top: 50px;
+  top: 20px;
   left: 20px;
   transition: transform 0.25s ease, filter 0.25s ease;
 }
