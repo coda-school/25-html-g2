@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roulette Game</title>
+  <link rel="stylesheet" href="roulette.css">
+  <link rel="icon" type="image/png" href="../Image/favicone2.png">
+  <meta name="description" content="Online roulette game — place your bets and try your luck. Play responsibly.">
+</head>
+<body>
+
+  <header>
+    <a id="Roulette-game"></a>
+    <a href="../PageAcceuil/index.html" class="home-btn" aria-label="Back to home page">
+      <img src="../Image/Home.png" alt="Home" class="home-icon">
+    </a>
+    <a href="Roulette.html" class="flag-btn" aria-label="French Roulette">
+    <img src="../Image/French%20Flag.png" alt="French Flag" class="flag-icon">
+    </a>
+    <br>
+    <br>
+  </header>
+
+  <main>
+    <section class="jeu-section">
+      <h1>ROULETTE GAME</h1>
+      <div class="image-et-texte">
+        <img src="../Image/roulette.png" width="220" height="220"
+        alt="Roulette wheel">
+        <div class="texte">
+          <h2>Rules of the game:</h2>
+          <h3>How to play ?</h3>
+          <ul>
+            <li>Place your bet before clicking “Play.”</li>
+            <li>The ball will spin and stop on a number between 0 and 36.</li>
+            <li>The box where it lands will determine the <strong>winning number</strong>.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="circle-roulette" aria-label="Animated Roulette">
+      <div class="pointer"></div>
+      <div class="led-ring">
+        <div class="outer">
+          <div class="roulette" role="img" aria-label="Roulette wheel"></div>
+          <div class="center">
+            <div class="winstreak">WINSTREAK</div>
+            <div class="winstreak-sub"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="mise-container">
+      <label for="bet">Your bet :</label>
+      <input type="number" id="bet" name="bet">
+    </div>
+
+    <div class="controls">
+      <button class="mon-bouton" aria-label="Spin the roulette wheel">🎯 PLAY</button>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-content">
+
+      <article class="footer-section legal">
+        <h3>Legal notices</h3>
+        <p>This site is intended for <strong>adults only.</strong>. Gambling involves <strong>risks</strong>. Gamble <strong>responsibly.</strong></p>
+        <p>© 2025 WinStreak — All rights reserved.</p>
+      </article>
+
+      <article class="footer-section other-games">
+        <h3>Play other games</h3>
+        <ul>
+          <li>
+            <a href="../Box/Box.html"><img class="image" src="../Image/box1.png" width="150" alt="Box Opening"></a>
+            <h3><a  class="colortextjeux">💰 Box</a></h3>
+          </li>
+          <li>
+            <a href="../SlotMachine/Slot-machine.html"><img class="image" src="../Image/slot-machine.png" width="100" alt="Slot Machine"></a>
+            <h3><a class="colortextjeux">🎰 Slot Machine</a></h3>
+          </li>
+        </ul>
+        <h3>Useful links</h3>
+        <ul>
+          <li><a href="https://github.com/coda-school/25-html-g2.git">🔗 GitHub</a></li>
+          <li><a href="https://coda-school.github.io/speedlify-dijon-b1-2025/25-html-g2/">🔗 Speedlify</a></li>
+        </ul>
+      </article>
+    </div>
+
+    <a href="#Roulette-game" class="back-to-top" aria-label="Back to top">⬆</a>
+  </footer>
+
+</body>
+</html>
+
