@@ -1,12 +1,8 @@
-/* /style.css */
 body {
     margin: 0;
     color: #fff1ff;
     letter-spacing: 0.5px;
-}
-
-body {
-  background: url('../Image/fond-box.png') center/cover no-repeat fixed;
+    background: url('../Image/fond-box.png') center/cover no-repeat fixed;
 }
 
 h1 {
@@ -121,7 +117,7 @@ h1 {
 }
 
 .toggle {
-    /*display: none;*/
+    display: none;
 }
 
 .info-bubble {
@@ -313,3 +309,24 @@ h1 {
   transform: scale(1.1) rotate(5deg);
 }
 
+.lang-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: linear-gradient(145deg, #ff4fa3, #b8007e);
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 16px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 1rem;
+  box-shadow: 0 0 10px rgba(255, 0, 140, 0.7);
+  transition: all 0.25s ease;
+  z-index: 1000;
+}
+
+.lang-btn:hover {
+  background: linear-gradient(145deg, #ff66cc, #d90093);
+  transform: scale(1.08);
+  box-shadow: 0 0 18px rgba(255, 50, 160, 0.8);
+}

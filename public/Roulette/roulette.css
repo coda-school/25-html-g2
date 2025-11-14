@@ -4,8 +4,10 @@
   text-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
   font-size: 8vw;
   text-align: center;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
+  margin-top: 80px;
 }
+
 .image-et-texte
 {
   display: flex;
@@ -272,6 +274,17 @@ textarea {
   left: 20px;
   transition: transform 0.25s ease, filter 0.25s ease;
 }
+@media (max-width: 512px) {
+  .home-btn {
+    bottom: 660px;   /* position en bas */
+    top: auto;      /* on annule la position top */
+    left: 35%;      /* centré horizontalement */
+    transform: translateX(-50%);
+    font-size: 0px;
+    padding: 0px;
+    display: block; 
+  }
+}
 
 .home-icon {
   width: 50px;
@@ -284,6 +297,58 @@ textarea {
   transform: scale(1.1);
   filter: drop-shadow(0 0 14px rgba(255, 80, 80, 0.9));
 }
+
+
+.flag-btn {
+    position: absolute;
+    top: 20px;
+    left: 130px;
+    background: linear-gradient(145deg, rgba(249, 112, 112, 0.6), #c60000);
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 18px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 1rem;
+    box-shadow: 0 0 10px rgba(251, 115, 115, 0.6);
+    transition: all 0.25s ease;
+    z-index: 1000;
+}
+
+@media (max-width: 512px) {
+  .flag-btn {
+    bottom: 660px;   /* position en bas */
+    top: auto;      /* on annule la position top */
+    left: 70%;      /* centré horizontalement */
+    transform: translateX(-50%);
+    font-size: 0px;
+    padding: 0px;
+    display: block; 
+  }
+}
+
+.flag-btn:hover {
+    background: linear-gradient(145deg, rgb(250, 0, 104), #c12424);
+    transform: scale(1.08);
+    box-shadow: 0 0 18px rgba(255, 80, 135, 0.89);
+}
+
+.flag-btn {
+    transition: transform 0.25s ease, filter 0.25s ease;
+}
+
+.flag-icon {
+    width: 50px;
+    height: 50px;
+    filter: drop-shadow(0 0 8px rgba(255, 0, 0, 0.6));
+    transition: filter 0.25s ease, transform 0.25s ease;
+}
+
+.flag-btn:hover .flag-icon {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 14px rgba(255, 80, 80, 0.89));
+}
+
 
 .site-footer {
   background: linear-gradient(145deg, rgba(255, 80, 180, 0.15), rgba(120, 0, 180, 0.2));

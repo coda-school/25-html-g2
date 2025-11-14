@@ -86,6 +86,7 @@ h1{
 }
 
 
+
 /*couleur texte*/
 .colortextjeux{
   color: rgb(255, 170, 0);
@@ -170,7 +171,7 @@ input[type=text]:hover {
 
 /*bouton jouer*/
 .styleslot {
-  
+
   border: 0;
   line-height: 2.0;
   padding: 0 20px;
@@ -206,6 +207,7 @@ input[type=text]:hover {
   box-shadow: 0 -0 20px rgba(255, 230, 50, 0.3);
 
 }
+
 
 .footer-content {
   display: flex;
@@ -257,7 +259,7 @@ input[type=text]:hover {
 }
 
 .footer-section ul li a {
-  color: #ffe870;
+  color: rgb(255, 170, 0);
   text-decoration: none;
   font-weight: bold;
   transition: color 0.25s ease, text-shadow 0.25s ease;
@@ -268,5 +270,12 @@ input[type=text]:hover {
   filter: drop-shadow(0 0 10px rgba(255, 227, 16, 0.477));
 }
 
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    width: 100%;
+    height: auto;
+    aspect-ratio: auto 100 / 100;
+}
 
 
