@@ -120,7 +120,9 @@ h1 {
   transform: scale(1.1) rotate(10deg);
 }
 
-.toggle { display: none; }
+.toggle {
+    /*display: none;*/
+}
 
 .info-bubble {
   position: absolute;
@@ -138,6 +140,7 @@ h1 {
   display: none;
   box-shadow: 0 0 12px rgba(255, 50, 180, 0.3);
 }
+
 .toggle:checked + .question-btn + .info-bubble {
   display: block;
   animation: fadeIn 0.3s ease;

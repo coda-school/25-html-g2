@@ -17,7 +17,81 @@ body {
     background-attachment: fixed;
 }
 
+.home-btn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: linear-gradient(145deg, rgba(193, 49, 221, 0.6), #2447c1);
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 18px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 1rem;
+    box-shadow: 0 0 10px rgba(193, 49, 221, 0.6);
+    transition: all 0.25s ease;
+    z-index: 1000;
+}
 
+.home-btn:hover {
+    background: linear-gradient(145deg, rgb(0, 250, 154), #2447c1);
+    transform: scale(1.08);
+    box-shadow: 0 0 18px rgba(80, 255, 109, 0.89);
+}
+
+.home-btn {
+    transition: transform 0.25s ease, filter 0.25s ease;
+}
+
+.home-icon {
+    width: 50px;
+    height: 50px;
+    filter: drop-shadow(0 0 8px rgba(255, 0, 150, 0.6));
+    transition: filter 0.25s ease, transform 0.25s ease;
+}
+
+.home-btn:hover .home-icon {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 14px rgba(80, 255, 109, 0.89));
+}
+
+.flag-btn {
+    position: absolute;
+    top: 120px;
+    left: 20px;
+    background: linear-gradient(145deg, rgba(193, 49, 221, 0.6), #2447c1);
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 18px;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 1rem;
+    box-shadow: 0 0 10px rgba(193, 49, 221, 0.6);
+    transition: all 0.25s ease;
+    z-index: 1000;
+}
+
+.flag-btn:hover {
+    background: linear-gradient(145deg, rgb(0, 250, 154), #2447c1);
+    transform: scale(1.08);
+    box-shadow: 0 0 18px rgba(80, 255, 109, 0.89);
+}
+
+.flag-btn {
+    transition: transform 0.25s ease, filter 0.25s ease;
+}
+
+.flag-icon {
+    width: 50px;
+    height: 50px;
+    filter: drop-shadow(0 0 8px rgba(255, 0, 150, 0.6));
+    transition: filter 0.25s ease, transform 0.25s ease;
+}
+
+.flag-btn:hover .flag-icon {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 14px rgba(80, 255, 109, 0.89));
+}
 
 .wrapper {
     width: 420px;
