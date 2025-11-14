@@ -1,12 +1,12 @@
 .home-btn {
   position: absolute;
-  top: 4vw;
-  left: 4vw;
+  top: 2vw;
+  left: 2vw;
   background: linear-gradient(145deg, rgb(255, 251, 32), rgb(255, 170, 0));
   color: #fff;
   text-decoration: none;
-  padding: 2vw 3vw;
-  border-radius: 2vw;
+  padding: 1vw 1.5vw;
+  border-radius: 1.5vw;
   font-weight: bold;
   font-size: 1rem;
   box-shadow: 0 0 10px rgb(255, 170, 0);
@@ -14,60 +14,69 @@
   z-index: 1000;
   
 }
+.home-icon {
+  width: 5vw;
+  height: 5vw;
+  filter: drop-shadow(0 0 8px rgb(255, 170, 0));
+  transition: filter 0.25s ease, transform 0.25s ease;
+}
 
 .home-btn:hover {
-  background: linear-gradient(145deg, rgb(255, 251, 32), rgb(255, 170, 0));
   transform: scale(1.08);
   box-shadow: 0 0 18px rgb(255, 170, 0);
 }
 
-.home-btn {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  transition: transform 0.25s ease, filter 0.25s ease;
-}
-
-.home-icon {
-  width: 10vw;
-  height: 10vw;
-  filter: drop-shadow(0 0 8px rgb(255, 170, 0));
-  transition: filter 0.25s ease, transform 0.25s ease;
-  
-}
-
 .home-btn:hover .home-icon {
   transform: scale(1.1);
-  filter: drop-shadow(0 0 14px  rgb(255, 251, 32));
+  filter: drop-shadow(0 0 14px rgb(255, 251, 32));
 }
 
-.flag-btn {
-    position: absolute;
+@media (min-width: 600px) {
+  .home-btn {
     top: 20px;
-    left: 130px;
-    background: linear-gradient(145deg, rgba(249, 224, 112, 0.6), #c6a800);
-    color: #fff;
-    text-decoration: none;
+    left: 20px;
     padding: 10px 18px;
     border-radius: 10px;
-    font-weight: bold;
-    font-size: 1rem;
-    box-shadow: 0 0 10px rgba(251, 224, 115, 0.6);
-    transition: all 0.25s ease;
-    z-index: 1000;
-}
+  }
 
-@media (max-width: 512px) {
-  .flag-btn {
-    bottom: 600px;   /* position en bas */
-    top: auto;      /* on annule la position top */
-    left: 70%;      /* centré horizontalement */
-    transform: translateX(-50%);
-    font-size: 0px;
-    padding: 0px;
-    display: block; 
+  .home-icon {
+    width: 50px;
+    height: 50px;
   }
 }
+
+
+
+.flag-btn {
+  position: absolute;
+  top: 2vw;
+  right: 2vw;
+  background: linear-gradient(145deg, rgb(255, 251, 32), rgb(255, 170, 0));
+  color: #fff;
+  text-decoration: none;
+  padding: 1vw 1.5vw;
+  border-radius: 1.5vw;
+  font-weight: bold;
+  font-size: 1rem;
+  box-shadow: 0 0 10px rgb(255, 170, 0);
+  transition: all 0.25s ease;
+  z-index: 1000;
+}
+
+@media (min-width: 600px) {
+  .flag-btn {
+    top: 20px;
+    right: 20px;
+    padding: 10px 18px;
+    border-radius: 10px;
+  }
+
+  .flag-icon {
+    width: 50px;
+    height: 50px;
+  }
+}
+
 
 .flag-btn:hover {
     background: linear-gradient(145deg, rgb(250, 187, 0), #c19224);
@@ -90,6 +99,11 @@
     transform: scale(1.1);
     filter: drop-shadow(0 0 14px rgba(255, 220, 80, 0.89));
 }
+
+
+
+
+
 
 
 /*Corps de la pages*/
