@@ -34,21 +34,9 @@
   transition: filter 0.25s ease, transform 0.25s ease;
 }
 
-.home-btn:hover {
+.home-btn:hover .home-icon {
   transform: scale(1.1);
   filter: drop-shadow(0 0 14px  rgb(255, 251, 32));
-}
-
-header{
-  font-size: 4rem;
-  text-align: center;
-  text-transform: uppercase;
-  margin-top: 3rem;
-  color: rgb(255, 170, 0);
-  font-family: 'Orbitron', sans-serif;
-  text-shadow: 0 0 10px rgb(0, 0, 0);
-  white-space: nowrap;
-
 }
 
 
@@ -58,7 +46,6 @@ body {
   margin: 0;
   color: #000000;
   letter-spacing: 0.5px;
-  height: 100vh;
 }
 
 .spacejouer {
