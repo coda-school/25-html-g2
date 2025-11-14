@@ -19,16 +19,15 @@ body {
 
 .home-btn {
     position: absolute;
-    top: 20px;
-    left: 20px;
-    background: linear-gradient(145deg, rgba(193, 49, 221, 0.6), #2447c1);
+    top: 0;
+    left: 0;
+    background: transparent;
     color: #fff;
     text-decoration: none;
-    padding: 10px 18px;
+    padding: 8px 14px;
     border-radius: 10px;
     font-weight: bold;
     font-size: 1rem;
-    box-shadow: 0 0 10px rgba(193, 49, 221, 0.6);
     transition: all 0.25s ease;
     z-index: 1000;
 }
@@ -44,8 +43,8 @@ body {
 }
 
 .home-icon {
-    width: 50px;
-    height: 50px;
+    width: 35px;
+    height: 35px;
     filter: drop-shadow(0 0 8px rgba(255, 0, 150, 0.6));
     transition: filter 0.25s ease, transform 0.25s ease;
 }
@@ -57,16 +56,15 @@ body {
 
 .flag-btn {
     position: absolute;
-    top: 120px;
-    left: 20px;
-    background: linear-gradient(145deg, rgba(193, 49, 221, 0.6), #2447c1);
+    top: 0;
+    right: 0;
+    background: transparent;
     color: #fff;
     text-decoration: none;
-    padding: 10px 18px;
+    padding: 8px 14px;
     border-radius: 10px;
     font-weight: bold;
     font-size: 1rem;
-    box-shadow: 0 0 10px rgba(193, 49, 221, 0.6);
     transition: all 0.25s ease;
     z-index: 1000;
 }
@@ -82,8 +80,8 @@ body {
 }
 
 .flag-icon {
-    width: 50px;
-    height: 50px;
+    width: 35px;
+    height: 35px;
     filter: drop-shadow(0 0 8px rgba(255, 0, 150, 0.6));
     transition: filter 0.25s ease, transform 0.25s ease;
 }
