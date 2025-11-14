@@ -11,51 +11,51 @@
 </head>
 
 <body>
-<div class="wrapper">
+<main class="wrapper">
     <a href="../PageAccueil/accueil_en.html" class="home-btn" aria-label="Home page">
-        <img src="../Image/Home.png" alt="Lobby" class="home-icon">
+        <img src="../Image/Home.webp" alt="Lobby" class="home-icon">
     </a>
     <a href="Login.html" class="flag-btn" aria-label="French Log In">
-        <img src="../Image/French%20Flag.png" alt="French Flag" class="flag-icon">
+        <img src="../Image/French%20Flag.webp" alt="French Flag" class="flag-icon">
     </a>
     <form action="">
         <h1>Welcome</h1>
-        <div class="inputBox">
+        <section class="inputBox">
             <input type="text"
                    name="username"
                    placeholder="username"
-                   required="required">
-            <img src="..\image\user.png" class="icon"
+                   required="required"/>
+            <img src="../Image/user.png" class="icon"
                  alt="User Icon">
-        </div>
-        <div class="inputBox">
+        </section>
+        <section class="inputBox">
             <input type="password"
                    placeholder="password"
                    required="required"
                    minlength="6"
                    pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$"
                    title="The password must have: 1 capital letter, 1 tiny letter, 1 number, 6 characters"
-            >
-            <img src="..\image\lock.png" class="icon"
+            />
+            <img src="../Image/lock.png" class="icon"
                  alt="Lock Icon">
 
-            <div class="remember-forgot">
+            <section class="remember-forgot">
                 <label>
                     <input type="checkbox" class="check">
                     Remember me
                 </label>
                 <a href="#">Forgot password?</a>
-            </div>
+            </section>
 
             <button type="submit" class="btn">Log In</button>
 
-            <div class="register-link">
+            <section class="register-link">
                 <p>You don't have an account?
                     <a href="SignupEN.html">Sign Up</a></p>
-            </div>
-        </div>
+            </section>
+        </section>
     </form>
-</div>
+</main>
 
 </body>
 </html>
