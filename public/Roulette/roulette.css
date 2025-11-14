@@ -276,7 +276,7 @@ textarea {
 }
 @media (max-width: 512px) {
   .home-btn {
-    bottom: 660px;   /* position en bas */
+    bottom: 600px;   /* position en bas */
     top: auto;      /* on annule la position top */
     left: 35%;      /* centré horizontalement */
     transform: translateX(-50%);
@@ -317,7 +317,7 @@ textarea {
 
 @media (max-width: 512px) {
   .flag-btn {
-    bottom: 660px;   /* position en bas */
+    bottom: 600px;   /* position en bas */
     top: auto;      /* on annule la position top */
     left: 70%;      /* centré horizontalement */
     transform: translateX(-50%);
