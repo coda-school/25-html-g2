@@ -316,17 +316,29 @@ h1 {
   background: linear-gradient(145deg, #ff4fa3, #b8007e);
   color: #fff;
   text-decoration: none;
-  padding: 10px 16px;
+  padding: 6px 10px;
   border-radius: 10px;
   font-weight: bold;
   font-size: 1rem;
   box-shadow: 0 0 10px rgba(255, 0, 140, 0.7);
   transition: all 0.25s ease;
   z-index: 1000;
+  height: 35px;
+  weight: 25px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
 }
 
 .lang-btn:hover {
   background: linear-gradient(145deg, #ff66cc, #d90093);
   transform: scale(1.08);
   box-shadow: 0 0 18px rgba(255, 50, 160, 0.8);
+}
+
+.flag-icon {
+    width: 35px;
+    height: 35px;
 }
