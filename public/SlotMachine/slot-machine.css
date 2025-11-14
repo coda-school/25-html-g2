@@ -84,10 +84,6 @@
     box-shadow: 0 0 18px rgba(255, 208, 80, 0.89);
 }
 
-.flag-btn {
-    transition: transform 0.25s ease, filter 0.25s ease;
-}
-
 .flag-icon {
     width: 5vw;
     height: 5vw;
