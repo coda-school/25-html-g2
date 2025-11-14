@@ -54,7 +54,7 @@ header{
 
 /*Corps de la pages*/
 body {
-  background: url('../Image/background-slot-machine.png') center/cover no-repeat fixed;
+  background: url('../Image/background-slot-machine-min.png') center/cover no-repeat fixed;
   margin: 0;
   color: #000000;
   letter-spacing: 0.5px;
