@@ -89,8 +89,8 @@
 }
 
 .flag-icon {
-    width: 50px;
-    height: 50px;
+    width: 5vw;
+    height: 5vw;
     filter: drop-shadow(0 0 8px rgba(255, 183, 0, 0.6));
     transition: filter 0.25s ease, transform 0.25s ease;
 }
