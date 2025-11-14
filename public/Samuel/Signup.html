@@ -11,40 +11,46 @@
 </head>
 
 <body>
-<div class="wrapper">
+<main class="wrapper">
     <a href="../Lobby/LobbyFR.html" class="home-btn" aria-label="Retour Page d'Accueil">
         <img src="../Image/Home.webp" alt="Accueil" class="home-icon">
     </a>
     <a href="SignupEN.html" class="flag-btn" aria-label="Page en anglais">
-        <img src="../Image/England%20Flag.webp" alt="Uk Flag" class="flag-icon">
+        <img src="../Image/England%2520Flag.webp" alt="Uk Flag" class="flag-icon">
     </a>
 <form action="">
     <h1>Bienvenue</h1>
-    <div class="inputBox">
-        <input type="text"
-               name="username"
-               placeholder="pseudo"
-               required="required">
+    <section class="inputBox">
+        <label>
+            <input type="text"
+                   name="username"
+                   placeholder="pseudo"
+                   required="required">
+        </label>
         <img src="../Image/user.png" class="icon"
              alt="User Icon">
-    </div>
-    <div class="inputBox">
-        <input type="email"
-               name="email"
-               placeholder="Adresse mail"
-               required="required">
+    </section>
+    <section class="inputBox">
+        <label>
+            <input type="email"
+                   name="email"
+                   placeholder="Adresse mail"
+                   required="required">
+        </label>
         <img src="../Image/mail.png" class="icon"
              alt="Mail Icon">
-    </div>
-    <div class="inputBox">
-        <input type="tel"
-               name="tel"
-               placeholder="N° de téléphone"
-               required="required">
+    </section>
+    <section class="inputBox">
+        <label>
+            <input type="tel"
+                   name="tel"
+                   placeholder="N° de téléphone"
+                   required="required">
+        </label>
         <img src="../Image/phone.png" class="icon"
              alt="Phone Icon">
-    </div>
-    <div class="inputBox">
+    </section>
+    <section class="inputBox">
     <input type="password"
            placeholder="mot de passe"
            required="required"
@@ -54,8 +60,8 @@
     >
         <img src="../Image/lock.png" class="icon"
              alt="Lock Icon">
-    </div>
-    <div class="inputBox">
+    </section>
+    <section class="inputBox">
             <input type="password"
                    placeholder="confirmation mot de passe"
                    required="required"
@@ -63,16 +69,16 @@
                    pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$"
                    title="Le mot de passe doit correspondre à celui que vous avez écrit"
                    >
-            <img src="../Image/lock.png" class="icon">
-        </div>
+            <img src="../Image/lock.png" class="icon" alt="Lock Icon">
+        </section>
         <hr>
-        <div class="Login-link">
+        <section class="Login-link">
             <p>Vous possédez déjà un compte?
                 <a href="Login.html">Se Connecter</a></p>
-        </div>
+        </section>
 
         <button type="submit" class="btn">S'inscrire</button>
     </form>
-</div>
+</main>
 </body>
 </html>

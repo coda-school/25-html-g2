@@ -11,24 +11,26 @@
 </head>
 
 <body>
-<div class="wrapper">
+<main class="wrapper">
     <form action="">
         <h1>Bienvenue</h1>
         <a href="../Lobby/LobbyFR.html" class="home-btn" aria-label="Retour Page d'Accueil">
             <img src="../Image/Home.webp" alt="Accueil" class="home-icon">
         </a>
         <a href="LoginEN.html" class="flag-btn" aria-label="Page en anglais">
-            <img src="../Image/England%20Flag.webp" alt="UK Flag" class="flag-icon">
+            <img src="../Image/England%2520Flag.webp" alt="UK Flag" class="flag-icon">
         </a>
-        <div class="inputBox">
-            <input type="text"
-                   name="username"
-                   placeholder="pseudo"
-                   required="required">
+        <section class="inputBox">
+            <label>
+                <input type="text"
+                       name="username"
+                       placeholder="pseudo"
+                       required="required">
+            </label>
             <img src="../Image/user.png" class="icon"
             alt="User Icon">
-        </div>
-        <div class="inputBox">
+        </section>
+        <section class="inputBox">
             <input type="password"
                    placeholder="mot de passe"
                    required="required"
@@ -38,25 +40,24 @@
             >
                    <img src="../Image/lock.png" class="icon"
                    alt="Lock Icon">
-
             <!-- Fonction pour rester connecté et pour mdp oublié -->
-            <div class="remember-forgot">
+            <section class="remember-forgot">
                 <label>
                         <input type="checkbox" class="check">
                         Rester connecté
                 </label>
                 <a href="#">Mot de passe oublié?</a>
-            </div>
+            </section>
 
             <button type="submit" class="btn">Connexion</button>
 
-            <div class="register-link">
+            <section class="register-link">
                 <p>Vous n'avez pas de compte?
                     <a href="Signup.html">S'inscrire</a></p>
-            </div>
-        </div>
+            </section>
+        </section>
     </form>
-</div>
+</main>
 
 </body>
 </html>
